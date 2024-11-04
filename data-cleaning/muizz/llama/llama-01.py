@@ -4,19 +4,45 @@ import csv
 from datetime import datetime
 
 # Input CSV file and output file paths
-input_csv_file = 'sample.csv'  # Input file with plant names
-output_csv_file = 'plant_data.csv'  # Output file to save the plant data
+input_csv_file = 'error-log.csv'  # Input file with plant names
+output_csv_file = 'error-log-data.csv'  # Output file to save the plant data
 success_log_file = 'success_log.txt'  # Log file for successful operations
 error_log_file = 'error_log.txt'  # Log file for unsuccessful operations
 
 # API endpoint
 url = "http://localhost:11434/api/generate"
 
+# Define the attributes structure for the prompt
+attributes = {
+    "Plant Category": "abc",
+    "Seed Name": "abc",
+    "Temperature (2 m)": "X-Y",
+    "Precipitation": "a-b",
+    "Soil Temperature (0 to 6 cm)": "X-Y",
+    "Soil Moisture (0-3 cm)": "a-b",
+    "Solar Radiation Variables": "a-b",
+    "Evapotranspiration": "a-b",
+    "Sunshine Duration": "a-b",
+    "UV Index": "X",
+    "Humidity": "a-b",
+    "Soil Type": ["abc", "abc", "abc"],
+    "Best Growing Areas": ["abc", "bca", "xyz"],
+    "Season": ["Start summer", "abc", "xyz"],
+    "Wind Threshold": "X",
+    "Heat Wave": {"Min": "X", "Max": "X"},
+    "Rainfall Alert": {"Min": "a", "Max": "b"},
+    "Watering": "X",
+    "List of Fertilization": ["abx", "afn"],
+    "Time Period for Fertilization": "X"
+}
+
 # Function to fetch data for a given plant name
 def fetch_data_for_plant(plant_name):
     data = {
         "model": "llama3",
-        "prompt": f"Provide the following data for {plant_name}: temperature, soil temperature, precipitation, soil moisture, sunshine duration, and humidity. Return data in JSON format.",
+        "prompt": f"Provide accurate data in JSON format for {plant_name} covering cultivation, alerts, and recommendations, "
+                  f"with the following attributes: {json.dumps(attributes, indent=2)}. "
+                  "Ensure all attributes are present, strictly numeric where specified, and exclude units in the response.",
         "stream": False
     }
     
@@ -25,13 +51,11 @@ def fetch_data_for_plant(plant_name):
     try:
         json_response = response.json()
         if 'response' in json_response:
-            # Extracting the JSON data from the response
             response_text = json_response['response']
-            start_index = response_text.find("```") + 3  # Start after the first ```
-            end_index = response_text.rfind("```")  # End before the last ```
-
-            # If valid indices are found, extract and parse the JSON
-            if start_index != -1 and end_index != -1 and end_index > start_index:
+            start_index = response_text.find("{")  # Start JSON parsing from the first '{'
+            end_index = response_text.rfind("}") + 1  # End JSON parsing at the last '}'
+            
+            if start_index != -1 and end_index != -1:
                 inner_json_str = response_text[start_index:end_index].strip()
                 return json.loads(inner_json_str)
             else:
@@ -41,47 +65,36 @@ def fetch_data_for_plant(plant_name):
     except (json.JSONDecodeError, ValueError):
         return None  # Return None if there's a JSON parsing error
 
-# Initialize output CSV with headers if not exists
+# Prepare output CSV with headers if not exists
 with open(output_csv_file, mode='w', newline='', encoding='utf-8') as out_csv:
-    fieldnames = ['Name', 'Temperature', 'Soil Temperature', 'Precipitation', 'Soil Moisture', 'Sunshine Duration', 'Humidity']
+    fieldnames = ['Name', 'Plant Category', 'Seed Name', 'Temperature (2 m)', 'Precipitation',
+                  'Soil Temperature (0 to 6 cm)', 'Soil Moisture (0-3 cm)', 'Solar Radiation Variables',
+                  'Evapotranspiration', 'Sunshine Duration', 'UV Index', 'Humidity', 'Soil Type',
+                  'Best Growing Areas', 'Season', 'Wind Threshold', 'Heat Wave', 'Rainfall Alert',
+                  'Watering', 'List of Fertilization', 'Time Period for Fertilization']
     writer = csv.DictWriter(out_csv, fieldnames=fieldnames)
-    writer.writeheader()  # Write headers only once
+    writer.writeheader()
 
-# Read plant names from input CSV and process in real-time
+# Process plant names from input CSV
 with open(input_csv_file, newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
 
-    # Process each plant name and save data immediately
     for row in reader:
-        plant_name = row['Names']  # Adjust column name as necessary
+        plant_name = row['Names']
         plant_data = fetch_data_for_plant(plant_name)
 
-        if plant_data:
-            # Ensure plant_data is a dictionary and not a list
-            if isinstance(plant_data, dict):
-                # Write data to output CSV immediately
-                with open(output_csv_file, mode='a', newline='', encoding='utf-8') as out_csv:
-                    writer = csv.DictWriter(out_csv, fieldnames=fieldnames)
-                    writer.writerow({
-                        'Name': plant_name,
-                        'Temperature': plant_data.get('temperature', {}).get('average_high', 'N/A'),  # Default to 'N/A'
-                        'Soil Temperature': plant_data.get('soil_temperature', {}).get('average_daytime', 'N/A'),  # Default to 'N/A'
-                        'Precipitation': plant_data.get('precipitation', {}).get('monthly_average', 'N/A'),  # Default to 'N/A'
-                        'Soil Moisture': plant_data.get('soil_moisture', {}).get('optimal_range', 'N/A'),  # Default to 'N/A'
-                        'Sunshine Duration': plant_data.get('sunshine_duration', {}).get('average_daily', 'N/A'),  # Default to 'N/A'
-                        'Humidity': plant_data.get('humidity', {}).get('average_relative_humidity', 'N/A')  # Default to 'N/A'
-                    })
-                
-                # Log the successful operation immediately
-                with open(success_log_file, mode='a', encoding='utf-8') as success_log:
-                    success_log.write(f"{datetime.now()} - Retrieved data for {plant_name} and saved to CSV\n")
-                
-            else:
-                # Log the error if plant_data is not a dictionary
-                with open(error_log_file, mode='a', encoding='utf-8') as error_log:
-                    error_log.write(f"{datetime.now()} - Data for {plant_name} returned unexpected structure: {plant_data}\n")
-                
+        if plant_data and isinstance(plant_data, dict):
+            # Write to output CSV
+            with open(output_csv_file, mode='a', newline='', encoding='utf-8') as out_csv:
+                writer = csv.DictWriter(out_csv, fieldnames=fieldnames)
+                row_data = {'Name': plant_name}
+                row_data.update(plant_data)  # Add the fetched JSON data directly
+                writer.writerow(row_data)
+
+            # Log success
+            with open(success_log_file, mode='a', encoding='utf-8') as success_log:
+                success_log.write(f"{datetime.now()} - Data retrieved and saved for {plant_name}\n")
         else:
-            # Log the error if data could not be retrieved
+            # Log errors
             with open(error_log_file, mode='a', encoding='utf-8') as error_log:
-                error_log.write(f"{datetime.now()} - Data for {plant_name} could not be retrieved.\n")
+                error_log.write(f"{datetime.now()} - Failed to retrieve valid data for {plant_name}\n")
