@@ -4,8 +4,8 @@ import csv
 from datetime import datetime
 
 # Input CSV file and output file paths
-input_csv_file = 'error-log.csv'  # Input file with plant names
-output_csv_file = 'error-log-data.csv'  # Output file to save the plant data
+input_csv_file = 'sample.csv'  # Input file with plant names
+output_csv_file = 'plant-data.csv'  # Output file to save the plant data
 success_log_file = 'success_log.txt'  # Log file for successful operations
 error_log_file = 'error_log.txt'  # Log file for unsuccessful operations
 
@@ -14,26 +14,15 @@ url = "http://localhost:11434/api/generate"
 
 # Define the attributes structure for the prompt
 attributes = {
-    "Plant Category": "abc",
     "Seed Name": "abc",
     "Temperature (2 m)": "X-Y",
     "Precipitation": "a-b",
     "Soil Temperature (0 to 6 cm)": "X-Y",
     "Soil Moisture (0-3 cm)": "a-b",
-    "Solar Radiation Variables": "a-b",
-    "Evapotranspiration": "a-b",
     "Sunshine Duration": "a-b",
-    "UV Index": "X",
     "Humidity": "a-b",
     "Soil Type": ["abc", "abc", "abc"],
-    "Best Growing Areas": ["abc", "bca", "xyz"],
-    "Season": ["Start summer", "abc", "xyz"],
-    "Wind Threshold": "X",
-    "Heat Wave": {"Min": "X", "Max": "X"},
-    "Rainfall Alert": {"Min": "a", "Max": "b"},
     "Watering": "X",
-    "List of Fertilization": ["abx", "afn"],
-    "Time Period for Fertilization": "X"
 }
 
 # Function to fetch data for a given plant name
@@ -67,11 +56,9 @@ def fetch_data_for_plant(plant_name):
 
 # Prepare output CSV with headers if not exists
 with open(output_csv_file, mode='w', newline='', encoding='utf-8') as out_csv:
-    fieldnames = ['Name', 'Plant Category', 'Seed Name', 'Temperature (2 m)', 'Precipitation',
-                  'Soil Temperature (0 to 6 cm)', 'Soil Moisture (0-3 cm)', 'Solar Radiation Variables',
-                  'Evapotranspiration', 'Sunshine Duration', 'UV Index', 'Humidity', 'Soil Type',
-                  'Best Growing Areas', 'Season', 'Wind Threshold', 'Heat Wave', 'Rainfall Alert',
-                  'Watering', 'List of Fertilization', 'Time Period for Fertilization']
+    fieldnames = ['Name', 'Seed Name', 'Temperature (2 m)', 'Precipitation',
+                  'Soil Temperature (0 to 6 cm)', 'Soil Moisture (0-3 cm)',
+                  'Sunshine Duration', 'Humidity', 'Soil Type', 'Watering']
     writer = csv.DictWriter(out_csv, fieldnames=fieldnames)
     writer.writeheader()
 
