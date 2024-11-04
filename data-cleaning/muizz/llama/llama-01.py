@@ -54,13 +54,27 @@ def fetch_data_for_plant(plant_name):
     except (json.JSONDecodeError, ValueError):
         return None  # Return None if there's a JSON parsing error
 
+# Read existing plant names from the output CSV file
+existing_names = set()
+try:
+    with open(output_csv_file, mode='r', newline='', encoding='utf-8') as out_csv:
+        reader = csv.DictReader(out_csv)
+        for row in reader:
+            existing_names.add(row['Name'])
+except FileNotFoundError:
+    # The file does not exist yet, so no existing names
+    pass
+
 # Prepare output CSV with headers if not exists
-with open(output_csv_file, mode='w', newline='', encoding='utf-8') as out_csv:
+with open(output_csv_file, mode='a', newline='', encoding='utf-8') as out_csv:
     fieldnames = ['Name', 'Seed Name', 'Temperature (2 m)', 'Precipitation',
                   'Soil Temperature (0 to 6 cm)', 'Soil Moisture (0-3 cm)',
                   'Sunshine Duration', 'Humidity', 'Soil Type', 'Watering']
     writer = csv.DictWriter(out_csv, fieldnames=fieldnames)
-    writer.writeheader()
+
+    # Write headers only if the file was empty
+    if out_csv.tell() == 0:
+        writer.writeheader()
 
 # Process plant names from input CSV
 with open(input_csv_file, newline='', encoding='utf-8') as csvfile:
@@ -68,6 +82,9 @@ with open(input_csv_file, newline='', encoding='utf-8') as csvfile:
 
     for row in reader:
         plant_name = row['Names']
+        if plant_name in existing_names:
+            continue  # Skip if the plant name already exists
+
         plant_data = fetch_data_for_plant(plant_name)
 
         if plant_data and isinstance(plant_data, dict):
