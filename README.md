@@ -1,1 +1,2 @@
 # seeds-wild
+We are an AI development team working on a comprehensive repository dedicated to enhancing the functionality of a website. Our work involves the development of various models, including leaf disease detection, plant detection, a recommendation model, and a cultivation model. We are passionate about leveraging artificial intelligence to improve agricultural practices and provide valuable insights for users.
