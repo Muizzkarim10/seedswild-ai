@@ -1,0 +1,106 @@
+2024-11-04 19:53:35.647465 - Data retrieved and saved for Sunflower, Mexican Sunflower (Tithonia rotundifolia)
+2024-11-04 20:02:52.647971 - Data retrieved and saved for Sunflower, Autumn Beauty (90 days)
+2024-11-04 20:05:23.788344 - Data retrieved and saved for Sunflower, Black Oil Hybrid (Perodovik Sunflower)
+2024-11-04 20:07:41.314502 - Data retrieved and saved for Sunflower, Lemon Queen
+2024-11-04 20:12:22.614789 - Data retrieved and saved for Sunflower, Sungold Dwarf
+2024-11-04 20:17:27.983955 - Data retrieved and saved for Butterfly Milkweed (Asclepias Tuberosa)
+2024-11-04 20:22:10.519496 - Data retrieved and saved for Native Perennial Seed Mix
+2024-11-04 20:27:11.506332 - Data retrieved and saved for Hummingbird & Butterfly Mixture
+2024-11-04 20:29:33.381379 - Data retrieved and saved for Phlox,  Mixed Colors (Annual)
+2024-11-04 20:34:03.388267 - Data retrieved and saved for Poppy, Orange
+2024-11-04 20:37:49.442710 - Data retrieved and saved for Wildflower Mix,  Northeastern & Fescue
+2024-11-04 20:38:57.116166 - Data retrieved and saved for Wildflower Mix,  Northeastern & Fescue
+2024-11-04 20:40:50.996880 - Data retrieved and saved for Sunflower, Mexican Sunflower (Tithonia rotundifolia)
+2024-11-04 20:43:07.949371 - Data retrieved and saved for Butterfly Milkweed (Asclepias Tuberosa)
+2024-11-04 20:46:53.656217 - Data retrieved and saved for Native Perennial Seed Mix
+2024-11-04 20:51:10.056460 - Data retrieved and saved for Hummingbird & Butterfly Mixture
+2024-11-04 20:53:17.115977 - Data retrieved and saved for Aster, Powderpuff (Callistephus chinensis)
+2024-11-04 20:55:24.469863 - Data retrieved and saved for Butterfly Milkweed (Asclepias Tuberosa)
+2024-11-04 20:57:21.802854 - Data retrieved and saved for Chrysanthemum Garland, Coronarium (Mum)
+2024-11-04 20:59:16.565848 - Data retrieved and saved for Deer Resistant Flower Seed Mix
+2024-11-04 21:01:40.305528 - Data retrieved and saved for Four O’clock Rose
+2024-11-04 21:04:34.648525 - Data retrieved and saved for Moonflower
+2024-11-04 21:09:10.720018 - Data retrieved and saved for Native Perennial Seed Mix
+2024-11-04 21:14:06.966774 - Data retrieved and saved for Sunflower, Mexican Sunflower (Tithonia rotundifolia)
+2024-11-04 21:16:25.054472 - Data retrieved and saved for Verbena, Mixed Florist Mix
+2024-11-04 21:18:32.491630 - Data retrieved and saved for Bird & Butterfly Mixture
+2024-11-04 21:24:16.917691 - Data retrieved and saved for Coneflower, Purple
+2024-11-04 21:35:37.409865 - Data retrieved and saved for Alfalfa,  American Double Eagle Brand
+2024-11-04 21:39:10.078469 - Data retrieved and saved for Alfalfa, American Eagle Brand
+2024-11-04 21:46:03.354436 - Data retrieved and saved for Buckwheat,  Common
+2024-11-04 21:49:38.101314 - Data retrieved and saved for Canarygrass, Triatholon Reed
+2024-11-04 21:53:50.012522 - Data retrieved and saved for Clover,  Ladino
+2024-11-04 22:05:54.844417 - Data retrieved and saved for Rye (Grain) VNS
+2024-11-04 22:14:44.186155 - Data retrieved and saved for Crown Vetch,  Penngift
+2024-11-04 22:19:25.870439 - Data retrieved and saved for Orchardgrass,  Alpine II
+2024-11-04 22:21:22.098847 - Data retrieved and saved for Orchardgrass,  Devour
+2024-11-04 22:23:11.731271 - Data retrieved and saved for Orchardgrass,  Potomac
+2024-11-04 22:25:23.779438 - Data retrieved and saved for Winter Peas, Austrian
+2024-11-04 22:29:18.688966 - Data retrieved and saved for Sorghum, Green Grazer
+2024-11-04 22:34:34.245333 - Data retrieved and saved for Buckwheat,  Common
+2024-11-04 22:36:28.666959 - Data retrieved and saved for Chufa
+2024-11-04 22:38:12.306603 - Data retrieved and saved for Oats, Kara
+2024-11-04 22:45:41.573268 - Data retrieved and saved for Beet, Sugar (120 Days), Heirloom
+2024-11-04 22:47:34.180993 - Data retrieved and saved for Bucks-A-Plenty
+2024-11-04 22:49:41.227590 - Data retrieved and saved for Chicory, Six Point
+2024-11-04 22:54:59.811737 - Data retrieved and saved for Crown Vetch,  Penngift
+2024-11-04 22:58:56.170466 - Data retrieved and saved for Radish, Daikon – Cover Crop
+2024-11-04 23:00:48.966543 - Data retrieved and saved for Rye (Grain) VNS
+2024-11-04 23:03:00.431632 - Data retrieved and saved for Sorghum Grain, Heading
+2024-11-04 23:05:00.298917 - Data retrieved and saved for Switchgrass
+2024-11-04 23:09:19.746992 - Data retrieved and saved for Timothy,  Climax
+2024-11-04 23:13:27.872321 - Data retrieved and saved for Turnip, Seven Top or Winter Greens (45 days), Heirloom
+2024-11-04 23:19:43.549741 - Data retrieved and saved for Broadcast Spreader
+2024-11-04 23:22:21.930230 - Data retrieved and saved for Grass Mix,  85/15X
+2024-11-04 23:24:34.364458 - Data retrieved and saved for Grass Mix,  Fairway
+2024-11-04 23:26:30.102268 - Data retrieved and saved for Grass Mix,  Elite
+2024-11-06 19:42:39.022631 - Data retrieved and saved for Grass Mix,  Elite
+2024-11-06 19:46:50.338230 - Data retrieved and saved for Grass Mix,  Kentucky Bluegrass Blend
+2024-11-06 19:48:35.013021 - Data retrieved and saved for Grass Mix,  Shady
+2024-11-06 19:50:35.589003 - Data retrieved and saved for Grass Mix,  Tuff Turf 21
+2024-11-06 19:54:42.229384 - Data retrieved and saved for Grass Mix, American Premier
+2024-11-06 20:04:26.590058 - Data retrieved and saved for Low-Growing Mixture
+2024-11-06 20:09:42.436374 - Data retrieved and saved for Marigold, French Petite
+2024-11-06 20:11:42.934840 - Data retrieved and saved for Marigold, Sparky Mix
+2024-11-06 20:13:41.763168 - Data retrieved and saved for Monarch Butterfly Garden Mixture
+2024-11-06 20:15:41.297164 - Data retrieved and saved for Phlox,  Mixed Colors (Annual)
+2024-11-06 20:26:06.019480 - Data retrieved and saved for Sweet Pea, Knee High
+2024-11-06 20:28:24.622885 - Data retrieved and saved for Zinnia, American Mixture
+2024-11-06 20:30:53.620426 - Data retrieved and saved for Zinnia, California Giant
+2024-11-06 20:33:19.932822 - Data retrieved and saved for Zinnia, State Fair Mixture
+2024-11-06 20:35:15.444064 - Data retrieved and saved for Vetch,  Hairy
+2024-11-06 20:40:49.058263 - Data retrieved and saved for Winter Peas, Austrian
+2024-11-06 20:44:31.328211 - Data retrieved and saved for Potatoes, Elba (Late), Certified
+2024-11-06 20:50:13.906300 - Data retrieved and saved for Potatoes, Purple Viking (Early Season), Certified
+2024-11-06 20:51:59.950711 - Data retrieved and saved for Potatoes, Reba (Late Season), Certified
+2024-11-06 21:01:34.310042 - Data retrieved and saved for Potatoes, Adirondack Red ( Mid Season), Certified
+2024-11-06 21:03:40.806185 - Data retrieved and saved for Potatoes, Austrian Crescent (Long Season)
+2024-11-06 21:07:48.577034 - Data retrieved and saved for Potatoes, Caribou Russet (Mid Season), Certified
+2024-11-06 21:09:44.815074 - Data retrieved and saved for Potatoes, Chiefton (Mid Season), Certified
+2024-11-06 21:11:50.027466 - Data retrieved and saved for Potatoes, Eva (Mid Season), Certified
+2024-11-06 21:14:05.812237 - Data retrieved and saved for Potatoes, French Fingerling (Mid Long Season), Certified
+2024-11-06 21:16:23.903073 - Data retrieved and saved for Potatoes, Gold Rush(Mid Season), Certified
+2024-11-06 21:19:25.997688 - Data retrieved and saved for Potatoes, Katahdin (Late Season), Certified
+2024-11-06 21:21:51.604733 - Data retrieved and saved for Potatoes, Kennebec (Mid Season), Certified
+2024-11-06 21:23:50.030468 - Data retrieved and saved for Potatoes, Keuka Gold (Mid Season), Certified
+2024-11-06 21:25:39.588261 - Data retrieved and saved for Potatoes, Lehigh (Late Season), Certified
+2024-11-06 21:27:29.929160 - Data retrieved and saved for Potatoes, Red Maria (Late Season), Certified
+2024-11-06 21:29:12.221434 - Data retrieved and saved for Potatoes, Red Norland (Early Mid Season), Certified
+2024-11-06 21:30:55.085376 - Data retrieved and saved for Potatoes, Red Pontiac (Mid Season), Certified
+2024-11-06 21:33:00.025740 - Data retrieved and saved for Potatoes, Russet Burbank (Long Season), Certified
+2024-11-06 21:35:12.721314 - Data retrieved and saved for Potatoes, Superior (Early Mid Season), Certified
+2024-11-06 21:37:10.877847 - Data retrieved and saved for Potatoes, Yukon Gem (Mid Season), Certified
+2024-11-06 21:42:24.880630 - Data retrieved and saved for Fall Green Manure MixCover Crop Seed
+2024-11-06 21:46:39.795110 - Data retrieved and saved for Hairy VetchOrganic Cover Crop Seed
+2024-11-06 21:51:01.234001 - Data retrieved and saved for BuckwheatCover Crop Seed
+2024-11-06 21:53:20.787861 - Data retrieved and saved for Buckwheat (Common)Organic Cover Crop Seed
+2024-11-06 21:55:24.863829 - Data retrieved and saved for New Zealand White CloverCover Crop Seed
+2024-11-06 21:57:22.518119 - Data retrieved and saved for Crimson CloverCover Crop Seed
+2024-11-06 22:01:22.097580 - Data retrieved and saved for Crimson CloverOrganic Cover Crop Seed
+2024-11-06 22:03:16.786430 - Data retrieved and saved for Medium Red CloverOrganic Cover Crop Seed
+2024-11-06 22:07:41.808998 - Data retrieved and saved for Fall Green Manure MixCover Crop Seed
+2024-11-06 22:10:16.205967 - Data retrieved and saved for Peas and Oats MixOrganic Cover Crop Seed
+2024-11-06 22:13:11.699588 - Data retrieved and saved for Oats (Common)Organic Cover Crop Seed
+2024-11-06 22:15:28.480666 - Data retrieved and saved for Winter Rye (Common)Organic Cover Crop Seed
+2024-11-06 22:20:04.497112 - Data retrieved and saved for Hairy VetchOrganic Cover Crop Seed
+2024-11-06 22:22:38.826216 - Data retrieved and saved for Field Peas (Maxum)Cover Crop Seed

@@ -1,0 +1,51 @@
+Name,Seed Name,Temperature (2 m),Precipitation,Soil Temperature (0 to 6 cm),Soil Moisture (0-3 cm),Sunshine Duration,Humidity,Soil Type,Watering
+"Grass Mix,  Elite","Grass Mix, Elite",22-25,600-800 mm,18-20,60-70%,6-8 hours,50-60%,"['Loamy Sand', 'Sandy Loam', 'Clay Loam']",Moderate
+"Grass Mix,  Kentucky Bluegrass Blend",Kentucky Bluegrass Blend,15-25,650-850 mm,10-20,40-60%,4-8 hours,50-70%,"['Clay Loam', 'Sandy Loam', 'Silty Loam']",Moderate to High
+"Grass Mix,  Shady",Grass Mix,,600-800 mm,,,4-6 hours,60-80%,"['Clay Loam', 'Sandy Loam', 'Peat']",As needed
+"Grass Mix,  Tuff Turf 21",Tuff Turf 21,18-24,7-10 mm/week,15-20,50-60%,4-6 hours/day,60-70%,"['Sandy Loam', 'Clayey Soil', 'Calcareous Soil']",1-2 times a week
+"Grass Mix, American Premier",American Premier,22-25,600-800 mm,20-22,50-60%,5-7 hours,50-70%,"['Clay Loam', 'Silty Clay Loam', 'Sand Loamy']",Moderate
+Low-Growing Mixture,Low-Growing Mixture,15-20,600-800 mm,12-18,40-60%,4-6 hours,50-70%,"['Clay Loam', 'Silt Loam', 'Sand Loam']",Weekly
+"Marigold, French Petite","Marigold, French Petite",20-25,10-15,18-22,5-8,6-8 hours,50-70%,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']",Average
+"Marigold, Sparky Mix","Marigold, Sparky Mix",,700-800 mm,,,6-8 hours,40-50%,"['Sandy Loam', 'Loamy Sand', 'Well Draining']","As needed, but avoid overwatering"
+Monarch Butterfly Garden Mixture,Monarch Butterfly Garden Mixture,22-25,600-800 mm,20-24,50-60%,4-6 hours,40-50%,"['Well-draining', 'Slightly acidic', 'Loamy']",As needed
+"Phlox,  Mixed Colors (Annual)",Phlox,20-25,1-5 mm/day,15-20,40-60%,4-8 hours,50-70%,"['Loamy Sand', 'Silty Loam', 'Clay Loam']","As needed, avoiding overwatering"
+"Sweet Pea, Knee High","Sweet Pea, Knee High",18-22,600-800 mm,15-20,40-60,4-6 hours,50-70,"['Sandy Loam', 'Loamy Sand', 'Sand']",Moderate
+"Zinnia, American Mixture","Zinnia, American Mixture",22-25,700-1000 mm,20-24,40-60%,6-8 hours,50-70%,"['Loamy sand', 'Sandy loam', 'Clay loam']",Moderate
+"Zinnia, California Giant","Zinnia, California Giant",22-28,600-800 mm,15-20,50-70%,5-7 hours,40-60%,"['Loamy Sand', 'Sand-Loam', 'Sandy Loam']",Moderate
+"Zinnia, State Fair Mixture","Zinnia, State Fair Mixture",23-27,5-7 days/week,20-24,loose to moist,6 hours/day,50-60%,"['Loamy', 'Sandy Loam', 'Calarosa']",regularly
+"Vetch,  Hairy",Vetch,15-20,600-800 mm,10-15,40-50%,5-7 hours,60-70%,"['Sandy Loam', 'Clay Loam', 'Loamy Sand']",As needed
+"Winter Peas, Austrian",Austrian Winter Peas,10-12,600-800 mm,7-9,60-70,5-8 hours,50-60,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']",Light
+"Potatoes, Elba (Late), Certified",Elba Late,15-20,600-800 mm,10-14,40-50%,1500-1800 hours,60-70%,"['Loamy Sand', 'Sandy Loam', 'Clay Loam']",Regular
+"Potatoes, Purple Viking (Early Season), Certified",Purple Viking,12-15,600-800 mm,8-10,60-70,15-18 hours,60-80%,"['Sandy Loam', 'Clay Loam', 'Loamy Sand']",Moderate
+"Potatoes, Reba (Late Season), Certified",Reba,18-22,700-1000 mm,12-15,50-70%,200-250 days,60-80%,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']",Moderate
+"Potatoes, Adirondack Red ( Mid Season), Certified",Adirondack Red,18-22,750-1000 mm,12-15,60-70%,10-12 hours,70-80%,"['Clay-loam', 'Silty-loam', 'Sand-loam']",As needed
+"Potatoes, Austrian Crescent (Long Season)",Austrian Crescent (Long Season),15-20,800-1000 mm,10-12,60-70,1800-2000 hours,50-60,"['Clay Loam', 'Sandy Loam', 'Loamy Sand']",Moderate
+"Potatoes, Caribou Russet (Mid Season), Certified",Caribou Russet,15-20,600-800 mm,10-15,50-60%,12-16 hours,70-80%,"['Loamy Sand', 'Sandy Loam', 'Clay Loam']",1 inch per week
+"Potatoes, Chiefton (Mid Season), Certified",Chiefton,,"['800-1000 mm', '600-700 mm']",,,"['12-14 hours', '10-12 hours']","['80-90%', '70-80%']","['Sand', 'Silt', 'Clay']",As needed
+"Potatoes, Eva (Mid Season), Certified",Eva,15-18,650-750 mm,10-12,60-70%,14-16 hours,70-80%,"['Loamy Sand', 'Sandy Loam', 'Clay Loam']","As needed, but avoid overhead irrigation"
+"Potatoes, French Fingerling (Mid Long Season), Certified",French Fingerling,,600-800 mm,,,6-8 hours,80-90%,"['Clay Loam', 'Silty Clay Loam', 'Sand Loam']",Regular to Moderate
+"Potatoes, Gold Rush(Mid Season), Certified",Gold Rush,,750-1000mm,,,12-14 hours,70-80%,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']",Moderate
+"Potatoes, Katahdin (Late Season), Certified",Katahdin,14-16,700-800 mm,10-12,60-70%,15-17 hours,70-80%,"['Sandy loam', 'Clay loam', 'Loamy sand']",Moderate
+"Potatoes, Kennebec (Mid Season), Certified",Kennebec,18-20,600-800 mm,15-17,60-70%,10-12 hours,60-80%,"['Sand', 'Loam', 'Clay']",As needed
+"Potatoes, Keuka Gold (Mid Season), Certified",Keuka Gold,15-20,600-800 mm,10-15,60-70%,12-14 hours,65-75%,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']",Moderate
+"Potatoes, Lehigh (Late Season), Certified",Lehigh Late Season,15-20,750-1000 mm,10-15,60-70%,12-14 hours,50-60%,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']","As needed, taking care not to overwater"
+"Potatoes, Red Maria (Late Season), Certified",Red Maria,15-20,700-1000 mm,10-15,50-70%,12-14 hours,60-80%,"['Sandy Loam', 'Loamy Sand', 'Silty Clay']",1 time a week
+"Potatoes, Red Norland (Early Mid Season), Certified",Red Norland,,600-800 mm,,,15-20 hours/day,70-80%,"['Sandy loam', 'Loamy sand', 'Clay loam']",As needed
+"Potatoes, Red Pontiac (Mid Season), Certified",Red Pontiac,,600-800 mm,,,6-8 hours,70-80%,"['Loamy Sand', 'Sandy Loam', 'Clay Loam']",Regular
+"Potatoes, Russet Burbank (Long Season), Certified","Potatoes, Russet Burbank (Long Season), Certified","[15, 20]","['700-800 mm', '800-900 mm']","[10, 15]","['60-70%', '50-60%']","['14-16 hours', '16-18 hours']","['65-75%', '70-80%']","['Clay Loam', 'Sandy Loam', 'Loamy Sand']",Moderate
+"Potatoes, Superior (Early Mid Season), Certified",Superior,15-20,800-1000 mm,10-12,50-60%,14-16 hours,70-80%,"['Well-draining sandy loam', 'Clay loam', 'Silty clay']",Moderate
+"Potatoes, Yukon Gem (Mid Season), Certified",Yukon Gem,,450-600 mm,,,6-8 hours,70-80,"['Sandy Loam', 'Clay Loam', 'Chalky']",Moderate
+Fall Green Manure MixCover Crop Seed,Fall Green Manure Mix,15-20,600-800 mm,10-15,60-80%,150-200 days,70-80%,"['Silty Loam', 'Loamy Sand', 'Clay Loam']",As needed
+Hairy VetchOrganic Cover Crop Seed,Hairy Vetch,15-20,500-700 mm,12-18,60-80%,1500-2000 hours,50-70%,"['Sandy Loam', 'Loamy Sand', 'Silty Clay']","As needed, but avoid overwatering"
+BuckwheatCover Crop Seed,Buckwheat,15-20,700-800 mm,10-15,50-60%,18-22 hours,40-60%,"['Clay Loam', 'Silt Loam', 'Sand Loam']",Moderate
+Buckwheat (Common)Organic Cover Crop Seed,Buckwheat (Common),17-25,500-800 mm,12-20,50-70%,6-8 hours,60-80%,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']","As needed, but avoid overwatering"
+New Zealand White CloverCover Crop Seed,New Zealand White Clover,18-22,400-600 mm,15-20,60-80,8-12 hours,50-70%,"['Sandy loam', 'Loamy sand', 'Clay loam']",Moderate
+Crimson CloverCover Crop Seed,Crimson Clover,15-20,600-800 mm,10-12,50-70%,6-8 hours,60-70%,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']","As needed, avoid overwatering"
+Crimson CloverOrganic Cover Crop Seed,Crimson Clover,18-22,400-600 mm,15-20,60-80,4-6 hours,50-70,"['Clay Loam', 'Sandy Loam', 'Silty Loam']",Moderate
+Medium Red CloverOrganic Cover Crop Seed,Medium Red Clover,15-20,500-700 mm,10-15,60-80,4-6 hours/day,60-70%,"['Silty Loam', 'Clay Loam', 'Sand']",As needed
+Fall Green Manure MixCover Crop Seed,Fall Green Manure Mix,12-18,600-800,10-14,50-70,4-6 hours,60-80%,"['Silty Clay Loam', 'Clay Loam', 'Sand']",Moderate
+Peas and Oats MixOrganic Cover Crop Seed,Peas and Oats MixOrganic,15-20,400-600 mm,10-18,40-60%,12-16 hours,50-70%,"['Sandy Loam', 'Loamy Sand', 'Clay Loam']",Moderate
+Oats (Common)Organic Cover Crop Seed,Oats (Common) Organic,,500-700 mm,,,4-6 hours,50-70%,"['Silty Loam', 'Clay Loam', 'Sand']",Moderate
+Winter Rye (Common)Organic Cover Crop Seed,Winter Rye (Common),5-10,400-600 mm,8-12,15-25%,4-6 hours,60-70%,"['Clay Loam', 'Silty Clay', 'Sandy Loam']","As needed, keep soil consistently moist during establishment phase (first 2 weeks)"
+Hairy VetchOrganic Cover Crop Seed,Hairy Vetch,15-20,600-800 mm,12-18,50-70%,4-6 hours,60-80%,"['Clay Loam', 'Sandy Loam', 'Loamy Sand']",Moderate
+Field Peas (Maxum)Cover Crop Seed,Field Peas (Maxum),18-22,400-800 mm,10-15,50-70,4-6 hours,60-80%,"['Silty Loam', 'Loamy Sand', 'Clay Loam']",Medium Frequent

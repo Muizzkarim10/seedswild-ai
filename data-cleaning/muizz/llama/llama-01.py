@@ -4,8 +4,8 @@ import csv
 from datetime import datetime
 
 # Input CSV file and output file paths
-input_csv_file = 'sample.csv'  # Input file with plant names
-output_csv_file = 'plant-data.csv'  # Output file to save the plant data
+input_csv_file = 'sample01.csv'  # Input file with plant names
+output_csv_file = 'plantdata-01.csv'  # Output file to save the plant data
 success_log_file = 'success_log.txt'  # Log file for successful operations
 error_log_file = 'error_log.txt'  # Log file for unsuccessful operations
 
