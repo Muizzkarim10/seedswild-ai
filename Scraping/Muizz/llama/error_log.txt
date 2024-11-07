@@ -1,0 +1,139 @@
+    2024-11-04 19:55:25.170755 - Error fetching data for Sunflower, Procut Horizon Pollenless: Expecting ',' delimiter: line 3 column 26 (char 55)
+    2024-11-04 19:55:25.171435 - Error fetching data for Sunflower, Procut Horizon Pollenless: Failed to retrieve valid data
+    2024-11-04 19:58:39.712574 - Error fetching data for Sunflower, Procut Peach: Extra data: line 16 column 1 (char 376)
+    2024-11-04 19:58:39.713169 - Error fetching data for Sunflower, Procut Peach: Failed to retrieve valid data
+    2024-11-04 20:00:43.717456 - Error fetching data for Sunflower, Procut Red Lemon BiColor Pollenless: Expecting ',' delimiter: line 3 column 21 (char 87)
+    2024-11-04 20:00:43.719379 - Error fetching data for Sunflower, Procut Red Lemon BiColor Pollenless: Failed to retrieve valid data
+2024-11-04 20:10:04.299745 - Error fetching data for Sunflower, Russian Mammoth (105 days): Expecting ',' delimiter: line 3 column 24 (char 57)
+2024-11-04 20:10:04.300321 - Error fetching data for Sunflower, Russian Mammoth (105 days): Failed to retrieve valid data
+2024-11-04 20:14:30.169731 - Error fetching data for Sunflower, Velvet Queen: Expecting ',' delimiter: line 3 column 24 (char 54)
+2024-11-04 20:14:30.170299 - Error fetching data for Sunflower, Velvet Queen: Failed to retrieve valid data
+2024-11-04 20:19:53.620215 - Error fetching data for Moonflower: Expecting ',' delimiter: line 3 column 27 (char 57)
+2024-11-04 20:19:53.620868 - Error fetching data for Moonflower: Failed to retrieve valid data
+2024-11-04 20:24:42.020438 - Error fetching data for Bumblebee Buffet: Expecting ',' delimiter: line 3 column 27 (char 63)
+2024-11-04 20:24:42.021140 - Error fetching data for Bumblebee Buffet: Failed to retrieve valid data
+2024-11-04 20:31:52.672335 - Error fetching data for Poppy, CA Formula: Expecting ',' delimiter: line 3 column 27 (char 52)
+2024-11-04 20:31:52.673019 - Error fetching data for Poppy, CA Formula: Failed to retrieve valid data
+2024-11-04 20:35:53.910815 - Error fetching data for Poppy, Red Corn: Expecting ',' delimiter: line 3 column 26 (char 54)
+2024-11-04 20:35:53.911396 - Error fetching data for Poppy, Red Corn: Failed to retrieve valid data
+2024-11-04 20:44:57.202280 - Error fetching data for Moonflower: Expecting ',' delimiter: line 3 column 27 (char 57)
+2024-11-04 20:44:57.203008 - Error fetching data for Moonflower: Failed to retrieve valid data
+2024-11-04 20:48:47.851105 - Error fetching data for Bumblebee Buffet: Expecting ',' delimiter: line 3 column 27 (char 63)
+2024-11-04 20:48:47.851698 - Error fetching data for Bumblebee Buffet: Failed to retrieve valid data
+2024-11-04 21:06:44.261584 - Error fetching data for Nasturtium, Jewel Mix: Expecting ',' delimiter: line 3 column 24 (char 63)
+2024-11-04 21:06:44.262224 - Error fetching data for Nasturtium, Jewel Mix: Failed to retrieve valid data
+2024-11-04 21:11:26.923981 - Error fetching data for Shasta Daisy: Expecting ',' delimiter: line 3 column 27 (char 59)
+2024-11-04 21:11:26.924595 - Error fetching data for Shasta Daisy: Failed to retrieve valid data
+2024-11-04 21:20:36.584188 - Error fetching data for Black Eyed Susan: Expecting ',' delimiter: line 3 column 27 (char 63)
+2024-11-04 21:20:36.584812 - Error fetching data for Black Eyed Susan: Failed to retrieve valid data
+2024-11-04 21:22:24.759309 - Error fetching data for Bumblebee Buffet: Expecting ',' delimiter: line 3 column 27 (char 63)
+2024-11-04 21:22:24.759962 - Error fetching data for Bumblebee Buffet: Failed to retrieve valid data
+2024-11-04 21:26:01.141018 - Error fetching data for Cosmos, Sensation: Expecting ',' delimiter: line 3 column 26 (char 52)
+2024-11-04 21:26:01.141561 - Error fetching data for Cosmos, Sensation: Failed to retrieve valid data
+2024-11-04 21:27:58.280077 - Error fetching data for Cut Flower Mixture: Expecting ',' delimiter: line 3 column 27 (char 65)
+2024-11-04 21:27:58.280676 - Error fetching data for Cut Flower Mixture: Failed to retrieve valid data
+2024-11-04 21:29:52.342840 - Error fetching data for Fragrant Mixture: Expecting ',' delimiter: line 3 column 27 (char 63)
+2024-11-04 21:29:52.343518 - Error fetching data for Fragrant Mixture: Failed to retrieve valid data
+2024-11-04 21:31:50.850868 - Error fetching data for Hummingbird & Butterfly Mixture: Expecting ',' delimiter: line 3 column 26 (char 77)
+2024-11-04 21:31:50.851507 - Error fetching data for Hummingbird & Butterfly Mixture: Failed to retrieve valid data
+2024-11-04 21:33:45.815694 - Error fetching data for Johnny Jump-Up “Helen Mount”, (Viola), Annual: Expecting ',' delimiter: line 3 column 26 (char 72)
+2024-11-04 21:33:45.816285 - Error fetching data for Johnny Jump-Up “Helen Mount”, (Viola), Annual: Failed to retrieve valid data
+2024-11-04 21:37:21.731921 - Error fetching data for Alfalfa, Variety Not Specified: Expecting ',' delimiter: line 3 column 24 (char 72)
+2024-11-04 21:37:21.732514 - Error fetching data for Alfalfa, Variety Not Specified: Failed to retrieve valid data
+2024-11-04 21:41:26.770936 - Error fetching data for Barley, Orwell Spring: Expecting ',' delimiter: line 3 column 26 (char 67)
+2024-11-04 21:41:26.771541 - Error fetching data for Barley, Orwell Spring: Failed to retrieve valid data
+2024-11-04 21:43:55.402788 - Error fetching data for Bromegrass, Smooth: Expecting ',' delimiter: line 3 column 27 (char 57)
+2024-11-04 21:43:55.403692 - Error fetching data for Bromegrass, Smooth: Failed to retrieve valid data
+2024-11-04 21:51:44.763466 - Error fetching data for Clover,  Alsike: Expecting ',' delimiter: line 3 column 27 (char 60)
+2024-11-04 21:51:44.764111 - Error fetching data for Clover,  Alsike: Failed to retrieve valid data
+2024-11-04 21:55:38.851635 - Error fetching data for Clover,  Crimson: Expecting ',' delimiter: line 3 column 23 (char 60)
+2024-11-04 21:55:38.852280 - Error fetching data for Clover,  Crimson: Failed to retrieve valid data
+2024-11-04 21:59:20.256921 - Error fetching data for Clover,  Medium Red, VNS: Extra data: line 12 column 1 (char 314)
+2024-11-04 21:59:20.257642 - Error fetching data for Clover,  Medium Red, VNS: Failed to retrieve valid data
+2024-11-04 22:01:27.740128 - Error fetching data for Clover,  White Dutch: Expecting ',' delimiter: line 3 column 27 (char 66)
+2024-11-04 22:01:27.740802 - Error fetching data for Clover,  White Dutch: Failed to retrieve valid data
+2024-11-04 22:03:39.145234 - Error fetching data for Clover, Yellow Blossom: Expecting ',' delimiter: line 3 column 27 (char 68)
+2024-11-04 22:03:39.145706 - Error fetching data for Clover, Yellow Blossom: Failed to retrieve valid data
+2024-11-04 22:08:03.057488 - Error fetching data for Timothy,  Climax: Expecting ',' delimiter: line 3 column 27 (char 54)
+2024-11-04 22:08:03.058120 - Error fetching data for Timothy,  Climax: Failed to retrieve valid data
+2024-11-04 22:11:21.933640 - Error fetching data for Trefoil,  Norcen: Expecting ',' delimiter: line 3 column 28 (char 57)
+2024-11-04 22:11:21.934424 - Error fetching data for Trefoil,  Norcen: Failed to retrieve valid data
+2024-11-04 22:17:02.282082 - Error fetching data for Vetch,  Hairy: Expecting ',' delimiter: line 3 column 27 (char 52)
+2024-11-04 22:17:02.282722 - Error fetching data for Vetch,  Hairy: Failed to retrieve valid data
+2024-11-04 22:27:10.173788 - Error fetching data for Rape: Expecting ',' delimiter: line 3 column 21 (char 45)
+2024-11-04 22:27:10.174309 - Error fetching data for Rape: Failed to retrieve valid data
+2024-11-04 22:31:22.298924 - Error fetching data for Sorghum Grain, Heading: Expecting ',' delimiter: line 3 column 26 (char 59)
+2024-11-04 22:31:22.299536 - Error fetching data for Sorghum Grain, Heading: Failed to retrieve valid data
+2024-11-04 22:33:17.482911 - Error fetching data for Buckwheat,  Common: Expecting ',' delimiter: line 3 column 27 (char 56)
+2024-11-04 22:33:17.483603 - Error fetching data for Buckwheat,  Common: Failed to retrieve valid data
+2024-11-04 22:40:01.674109 - Error fetching data for Rape: Expecting ',' delimiter: line 3 column 27 (char 51)
+2024-11-04 22:40:01.674697 - Error fetching data for Rape: Failed to retrieve valid data
+2024-11-04 22:41:57.232069 - Error fetching data for Sorghum, Green Grazer: Expecting ',' delimiter: line 3 column 27 (char 59)
+2024-11-04 22:41:57.232579 - Error fetching data for Sorghum, Green Grazer: Failed to retrieve valid data
+2024-11-04 22:43:47.852762 - Error fetching data for Alfalfa, Variety Not Specified: Expecting ',' delimiter: line 3 column 21 (char 71)
+2024-11-04 22:43:47.853423 - Error fetching data for Alfalfa, Variety Not Specified: Failed to retrieve valid data
+2024-11-04 22:51:46.637432 - Error fetching data for Clover,  Crimson: Expecting ',' delimiter: line 3 column 29 (char 57)
+2024-11-04 22:51:46.638130 - Error fetching data for Clover,  Crimson: Failed to retrieve valid data
+2024-11-04 22:56:55.180302 - Error fetching data for Kale, Early Curled Siberian (55 Days), Heirloom: Expecting ',' delimiter: line 3 column 21 (char 68)
+2024-11-04 22:56:55.180919 - Error fetching data for Kale, Early Curled Siberian (55 Days), Heirloom: Failed to retrieve valid data
+2024-11-04 23:07:19.584883 - Error fetching data for Sunflower, Black Oil Hybrid (Perodovik Sunflower): Expecting ',' delimiter: line 3 column 27 (char 96)
+2024-11-04 23:07:19.585594 - Error fetching data for Sunflower, Black Oil Hybrid (Perodovik Sunflower): Failed to retrieve valid data
+2024-11-04 23:11:23.476052 - Error fetching data for Trefoil,  Norcen: Expecting ',' delimiter: line 3 column 21 (char 56)
+2024-11-04 23:11:23.476704 - Error fetching data for Trefoil,  Norcen: Failed to retrieve valid data
+2024-11-04 23:15:27.116001 - Error fetching data for Turnip,Purple Top White Globe (57 days), Heirloom: Expecting ',' delimiter: line 3 column 26 (char 68)
+2024-11-04 23:15:27.116624 - Error fetching data for Turnip,Purple Top White Globe (57 days), Heirloom: Failed to retrieve valid data
+2024-11-04 23:17:42.059762 - Error fetching data for Fawn Tall Fescue: Expecting ',' delimiter: line 3 column 27 (char 63)
+2024-11-04 23:17:42.060335 - Error fetching data for Fawn Tall Fescue: Failed to retrieve valid data
+
+2024-11-06 19:44:46.099367 - Error fetching data for Grass Mix,  Penn State Pro: Expecting ',' delimiter: line 3 column 26 (char 60)
+2024-11-06 19:44:46.100016 - Error fetching data for Grass Mix,  Penn State Pro: Failed to retrieve valid data
+2024-11-06 19:52:30.192174 - Error fetching data for Grass Mix, American Eagle: Expecting ',' delimiter: line 3 column 27 (char 72)
+2024-11-06 19:52:30.192749 - Error fetching data for Grass Mix, American Eagle: Failed to retrieve valid data
+2024-11-06 19:56:39.091978 - Error fetching data for Grass Mix, Contractors: Expecting ',' delimiter: line 3 column 27 (char 56)
+2024-11-06 19:56:39.092508 - Error fetching data for Grass Mix, Contractors: Failed to retrieve valid data
+2024-11-06 19:58:51.316634 - Error fetching data for Grass Mix, Drought Resistant: Expecting ',' delimiter: line 3 column 26 (char 73)
+2024-11-06 19:58:51.317243 - Error fetching data for Grass Mix, Drought Resistant: Failed to retrieve valid data
+2024-11-06 20:00:59.600633 - Error fetching data for Grass Mix, Turf Type Tall Fescue: Expecting ',' delimiter: line 3 column 27 (char 68)
+2024-11-06 20:00:59.601351 - Error fetching data for Grass Mix, Turf Type Tall Fescue: Failed to retrieve valid data
+2024-11-06 20:07:35.678596 - Error fetching data for Marigold, Crackerjack: Extra data: line 16 column 1 (char 335)
+2024-11-06 20:07:35.679222 - Error fetching data for Marigold, Crackerjack: Failed to retrieve valid data
+2024-11-06 20:17:59.400483 - Error fetching data for Poppy, CA Formula: Expecting ',' delimiter: line 3 column 26 (char 51)
+2024-11-06 20:17:59.401119 - Error fetching data for Poppy, CA Formula: Failed to retrieve valid data
+2024-11-06 20:20:39.117313 - Error fetching data for Poppy, Orange: Extra data: line 12 column 1 (char 313)
+2024-11-06 20:20:39.117884 - Error fetching data for Poppy, Orange: Failed to retrieve valid data
+2024-11-06 20:22:27.696041 - Error fetching data for Poppy, Red Corn: Expecting ',' delimiter: line 3 column 27 (char 62)
+2024-11-06 20:22:27.696682 - Error fetching data for Poppy, Red Corn: Failed to retrieve valid data
+2024-11-06 20:24:12.508784 - Error fetching data for Shade Mixture: Expecting ',' delimiter: line 3 column 27 (char 60)
+2024-11-06 20:24:12.509400 - Error fetching data for Shade Mixture: Failed to retrieve valid data
+2024-11-06 20:37:11.262942 - Error fetching data for Vivant Hybrid Brassica: Expecting ',' delimiter: line 3 column 26 (char 68)
+2024-11-06 20:37:11.263520 - Error fetching data for Vivant Hybrid Brassica: Failed to retrieve valid data
+2024-11-06 20:38:55.613838 - Error fetching data for Wheat SW535SR: Expecting ',' delimiter: line 3 column 26 (char 59)
+2024-11-06 20:38:55.614470 - Error fetching data for Wheat SW535SR: Failed to retrieve valid data
+2024-11-06 20:42:37.640264 - Error fetching data for Potato, German Butterball (Late), Certified: Expecting ',' delimiter: line 3 column 26 (char 63)
+2024-11-06 20:42:37.640815 - Error fetching data for Potato, German Butterball (Late), Certified: Failed to retrieve valid data
+2024-11-06 20:46:32.402957 - Error fetching data for Potatoes, Magic Molly (Purple) (Mid Season), Certified: Expecting ',' delimiter: line 3 column 21 (char 61)
+2024-11-06 20:46:32.403474 - Error fetching data for Potatoes, Magic Molly (Purple) (Mid Season), Certified: Failed to retrieve valid data
+2024-11-06 20:48:23.524722 - Error fetching data for Potatoes, Norwis (Mid Season), Certified: Expecting ',' delimiter: line 3 column 27 (char 66)
+2024-11-06 20:48:23.525331 - Error fetching data for Potatoes, Norwis (Mid Season), Certified: Failed to retrieve valid data
+2024-11-06 20:53:51.094454 - Error fetching data for Potatoes, Red Gold (Early), Certified: Expecting ',' delimiter: line 3 column 27 (char 63)
+2024-11-06 20:53:51.095155 - Error fetching data for Potatoes, Red Gold (Early), Certified: Failed to retrieve valid data
+2024-11-06 20:55:44.111642 - Error fetching data for Potatoes, Shepody (Early), Certified: Expecting ',' delimiter: line 3 column 21 (char 56)
+2024-11-06 20:55:44.112228 - Error fetching data for Potatoes, Shepody (Early), Certified: Failed to retrieve valid data
+2024-11-06 20:57:34.955396 - Error fetching data for Macho 2.0 FL potato pest control: Expecting ',' delimiter: line 3 column 26 (char 55)
+2024-11-06 20:57:34.956005 - Error fetching data for Macho 2.0 FL potato pest control: Failed to retrieve valid data
+2024-11-06 20:59:37.695363 - Error fetching data for Potatoes, Adirondack Blue ( Mid Season), Certified: Expecting ',' delimiter: line 3 column 27 (char 62)
+2024-11-06 20:59:37.696047 - Error fetching data for Potatoes, Adirondack Blue ( Mid Season), Certified: Failed to retrieve valid data
+2024-11-06 21:05:41.490196 - Error fetching data for Potatoes, Banana (Long Season), Certified: Expecting ',' delimiter: line 3 column 27 (char 75)
+2024-11-06 21:05:41.492831 - Error fetching data for Potatoes, Banana (Long Season), Certified: Failed to retrieve valid data
+2024-11-06 21:39:28.173741 - Error fetching data for Potatoes, Yukon Gold (Mid Season), Certified: Expecting ',' delimiter: line 3 column 21 (char 51)
+2024-11-06 21:39:28.174916 - Error fetching data for Potatoes, Yukon Gold (Mid Season), Certified: Failed to retrieve valid data
+2024-11-06 21:44:30.285013 - Error fetching data for Sweet AlyssumFlower Seed: Expecting ',' delimiter: line 3 column 26 (char 59)
+2024-11-06 21:44:30.285819 - Error fetching data for Sweet AlyssumFlower Seed: Failed to retrieve valid data
+2024-11-06 21:48:59.810230 - Error fetching data for PhaceliaFlower Seed: Expecting ',' delimiter: line 3 column 27 (char 55)
+2024-11-06 21:48:59.810983 - Error fetching data for PhaceliaFlower Seed: Failed to retrieve valid data
+2024-11-06 21:59:29.229631 - Error fetching data for Yellow MustardCover Crop Seed: Expecting ',' delimiter: line 3 column 26 (char 60)
+2024-11-06 21:59:29.230357 - Error fetching data for Yellow MustardCover Crop Seed: Failed to retrieve valid data
+2024-11-06 22:05:34.806941 - Error fetching data for Mammoth Red CloverOrganic Cover Crop Seed: Expecting ',' delimiter: line 3 column 26 (char 64)
+2024-11-06 22:05:34.807645 - Error fetching data for Mammoth Red CloverOrganic Cover Crop Seed: Failed to retrieve valid data
+2024-11-06 22:17:53.700099 - Error fetching data for BuckwheatCover Crop Seed: Expecting ',' delimiter: line 3 column 26 (char 55)
+2024-11-06 22:17:53.701011 - Error fetching data for BuckwheatCover Crop Seed: Failed to retrieve valid data
