@@ -13,7 +13,7 @@ import json
 from selenium.common.exceptions import StaleElementReferenceException
 
 # Load the CSV file to fetch plant names
-csv_file_path = "sample.csv"  # Update to absolute path if needed
+csv_file_path = "sample01.csv"  # Update to absolute path if needed
 df = pd.read_csv(csv_file_path)
 
 # Configure logging
@@ -93,10 +93,6 @@ def type_prompt_in_chatgpt(plant_name):
             input_box.send_keys(Keys.RETURN)
             print(f"Prompt sent after retry for {plant_name}.")
 
-        # Wait for the response (adjust this delay as needed)
-        time.sleep(random.uniform(5, 10))  # Adjust if necessary
-        return plant_name
-
     except Exception as e:
         logging.error(f"Failed to type prompt in ChatGPT for {plant_name}: {e}")
         print(f"Failed to type prompt in ChatGPT for {plant_name}: {e}")
@@ -104,51 +100,44 @@ def type_prompt_in_chatgpt(plant_name):
 # Function to extract the response
 def extract_response():
     try:
-        response_element = WebDriverWait(driver, 15).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json'))
-        )
+        response_elements = driver.find_elements(By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json')
+        responses = []
 
-        response_text = response_element.text
+        for response_element in response_elements:
+            response_text = response_element.text
+            plant_data = json.loads(response_text)
+            responses.append(plant_data)
 
-        # Parse the JSON response
-        plant_data = json.loads(response_text)
-        return plant_data
+        return responses
 
     except Exception as e:
-        logging.error(f"Failed to extract response: {e}")
-        print(f"Failed to extract response: {e}")
-        return {}
+        logging.error(f"Failed to extract responses: {e}")
+        print(f"Failed to extract responses: {e}")
+        return []
 
-# Collect all responses
-collected_data = []
+# Collect all responses for all plants
+all_collected_data = []
 
 # Iterate over the plant names in the CSV and send the prompts
 for plant_name in df['Names']:
     type_prompt_in_chatgpt(plant_name)
-    time.sleep(random.uniform(2, 5))  # Random delay between requests to avoid rate limiting
+    random_delay()  # Random delay between requests to avoid rate limiting
 
-    # Extract the response after sending the prompt
-    plant_data = extract_response()
+# Wait for all responses to be received
+time.sleep(5)  # Adjust time based on your observation of response speed
 
-    # Check if the response was valid and append
-    if plant_data:
-        formatted_data = {
-            "Seed Name": plant_data.get("Seed Name", ""),
-            "Temperature (2 m)": plant_data.get("Temperature (2 m)", ""),
-            "Precipitation": plant_data.get("Precipitation", ""),
-            "Soil Temperature (0 to 6 cm)": plant_data.get("Soil Temperature (0 to 6 cm)", ""),
-            "Soil Moisture (0-3 cm)": plant_data.get("Soil Moisture (0-3 cm)", ""),
-            "Sunshine Duration": plant_data.get("Sunshine Duration", ""),
-            "Humidity": plant_data.get("Humidity", ""),
-            "Soil Type": plant_data.get("Soil Type", ""),
-            "Watering": plant_data.get("Watering", "")
-        }
-        collected_data.append(formatted_data)
+# Extract all responses after all prompts are sent
+collected_data = extract_response()
 
-        # Save the data immediately to CSV after processing the current plant
-        output_df = pd.DataFrame(collected_data)
-        output_path = 'plant_data.csv'  # Absolute path for consistency
-        output_df.to_csv(output_path, index=False)
-        print(f"Data saved for {plant_name} to '{output_path}'")
+# Check if responses were extracted and append to the all collected data list
+if collected_data:
+    all_collected_data.extend(collected_data)
 
-print("All data processed and saved.")
+# Save the data after all responses are received
+if all_collected_data:
+    output_df = pd.DataFrame(all_collected_data)
+    output_path = 'plant_data.csv'  # Absolute path for consistency
+    output_df.to_csv(output_path, index=False)
+    print(f"All data saved to '{output_path}'.")
+
+print("Script finished.")

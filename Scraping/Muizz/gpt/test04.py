@@ -102,53 +102,72 @@ def type_prompt_in_chatgpt(plant_name):
         print(f"Failed to type prompt in ChatGPT for {plant_name}: {e}")
 
 # Function to extract the response
-def extract_response():
+def extract_responses():
     try:
-        response_element = WebDriverWait(driver, 15).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json'))
+        # Wait for all elements with the JSON data
+        response_elements = WebDriverWait(driver, 15).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json'))
         )
 
-        response_text = response_element.text
+        plant_data_list = []
+        for response_element in response_elements:
+            response_text = response_element.text
 
-        # Parse the JSON response
-        plant_data = json.loads(response_text)
-        return plant_data
+            # Parse the JSON response
+            plant_data = json.loads(response_text)
+            if plant_data:
+                formatted_data = {
+                    "Seed Name": plant_data.get("Seed Name", ""),
+                    "Temperature (2 m)": plant_data.get("Temperature (2 m)", ""),
+                    "Precipitation": plant_data.get("Precipitation", ""),
+                    "Soil Temperature (0 to 6 cm)": plant_data.get("Soil Temperature (0 to 6 cm)", ""),
+                    "Soil Moisture (0-3 cm)": plant_data.get("Soil Moisture (0-3 cm)", ""),
+                    "Sunshine Duration": plant_data.get("Sunshine Duration", ""),
+                    "Humidity": plant_data.get("Humidity", ""),
+                    "Soil Type": plant_data.get("Soil Type", ""),
+                    "Watering": plant_data.get("Watering", "")
+                }
+                plant_data_list.append(formatted_data)
+
+        return plant_data_list
 
     except Exception as e:
-        logging.error(f"Failed to extract response: {e}")
-        print(f"Failed to extract response: {e}")
-        return {}
+        logging.error(f"Failed to extract responses: {e}")
+        print(f"Failed to extract responses: {e}")
+        return []
 
 # Collect all responses
 collected_data = []
+
+# Check if the CSV file already exists
+output_path = 'plant_data.csv'  # Absolute path for consistency
+try:
+    existing_data = pd.read_csv(output_path)
+except FileNotFoundError:
+    existing_data = pd.DataFrame(columns=["Seed Name", "Temperature (2 m)", "Precipitation", "Soil Temperature (0 to 6 cm)",
+                                          "Soil Moisture (0-3 cm)", "Sunshine Duration", "Humidity", "Soil Type", "Watering"])
 
 # Iterate over the plant names in the CSV and send the prompts
 for plant_name in df['Names']:
     type_prompt_in_chatgpt(plant_name)
     time.sleep(random.uniform(2, 5))  # Random delay between requests to avoid rate limiting
 
-    # Extract the response after sending the prompt
-    plant_data = extract_response()
+    # Extract the responses after sending the prompt
+    plant_data_list = extract_responses()
 
-    # Check if the response was valid and append
-    if plant_data:
-        formatted_data = {
-            "Seed Name": plant_data.get("Seed Name", ""),
-            "Temperature (2 m)": plant_data.get("Temperature (2 m)", ""),
-            "Precipitation": plant_data.get("Precipitation", ""),
-            "Soil Temperature (0 to 6 cm)": plant_data.get("Soil Temperature (0 to 6 cm)", ""),
-            "Soil Moisture (0-3 cm)": plant_data.get("Soil Moisture (0-3 cm)", ""),
-            "Sunshine Duration": plant_data.get("Sunshine Duration", ""),
-            "Humidity": plant_data.get("Humidity", ""),
-            "Soil Type": plant_data.get("Soil Type", ""),
-            "Watering": plant_data.get("Watering", "")
-        }
-        collected_data.append(formatted_data)
+    # Add the extracted data to the collected list if not already in the CSV
+    if plant_data_list:
+        for plant_data in plant_data_list:
+            if not existing_data[existing_data["Seed Name"] == plant_data["Seed Name"]].empty:
+                print(f"Data for {plant_data['Seed Name']} already exists. Skipping...")
+            else:
+                collected_data.append(plant_data)
 
-        # Save the data immediately to CSV after processing the current plant
-        output_df = pd.DataFrame(collected_data)
-        output_path = 'plant_data.csv'  # Absolute path for consistency
-        output_df.to_csv(output_path, index=False)
-        print(f"Data saved for {plant_name} to '{output_path}'")
+        # Save the new data to CSV
+        if collected_data:
+            output_df = pd.DataFrame(collected_data)
+            output_df = pd.concat([existing_data, output_df], ignore_index=True)  # Append new data to existing
+            output_df.to_csv(output_path, index=False)
+            print(f"Data saved to '{output_path}'")
 
 print("All data processed and saved.")
