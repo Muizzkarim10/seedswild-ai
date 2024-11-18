@@ -36,3 +36,117 @@ Shasta Daisy,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Lo
 "Sunflower, Mexican Sunflower (Tithonia rotundifolia)",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
 "Verbena, Mixed Florist Mix",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
 Bird & Butterfly Mixture,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Seed Name,Temperature (2 m),Precipitation,Soil Temperature (0 to 6 cm),Soil Moisture (0-3 cm),Sunshine Duration,Humidity,Soil Type,Watering (per week)
+Black Eyed Susan,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Bumblebee Buffet,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Coneflower, Purple",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Cosmos, Sensation",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Cut Flower Mixture,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Fragrant Mixture,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Hummingbird & Butterfly Mixture,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Johnny Jump-Up “Helen Mount”, (Viola), Annual",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Alfalfa, American Double Eagle Brand",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Alfalfa, Variety Not Specified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Alfalfa, American Eagle Brand",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Barley, Orwell Spring",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Bromegrass, Smooth",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Buckwheat, Common",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Canarygrass, Triatholon Reed",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Clover, Alsike",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Clover, Ladino",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Clover, Crimson",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Clover, Medium Red, VNS",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Clover, White Dutch",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Clover, Yellow Blossom",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Rye (Grain) VNS,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Timothy, Climax",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Trefoil, Norcen",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Crown Vetch, Penngift",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Vetch, Hairy",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Orchardgrass, Alpine II",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Orchardgrass, Devour",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Orchardgrass, Potomac",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Winter Peas, Austrian",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Rape,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Sorghum, Green Grazer",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Sorghum Grain, Heading",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Buckwheat, Common",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Buckwheat, Common",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Chufa,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Oats, Kara",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Rape,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Seed Name,Temperature (2 m),Precipitation,Soil Temperature (0 to 6 cm),Soil Moisture (0-3 cm),Sunshine Duration,Humidity,Soil Type,Watering (per week)
+"Beet, Sugar (120 Days), Heirloom",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Bucks-A-Plenty,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Clover, Crimson",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Crown Vetch, Penngift",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Kale, Early Curled Siberian (55 Days), Heirloom",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Radish, Daikon – Cover Crop",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Rye (Grain) VNS,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Sorghum Grain, Heading",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+{plant_name},24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Switchgrass,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Sunflower, Black Oil Hybrid (Perodovik Sunflower)",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Timothy, Climax",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Trefoil, Norcen",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Turnip, Seven Top or Winter Greens (45 days), Heirloom",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Turnip, Purple Top White Globe (57 days), Heirloom",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Fawn Tall Fescue,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Broadcast Spreader,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, 85/15X",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, Fairway",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, Elite",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, Penn State Pro",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, Shady",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, American Eagle",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, American Premier",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, Contractors",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, Drought Resistant",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Grass Mix, Turf Type Tall Fescue",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Low-Growing Mixture,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Seed Name,Temperature (2 m),Precipitation,Soil Temperature (0 to 6 cm),Soil Moisture (0-3 cm),Sunshine Duration,Humidity,Soil Type,Watering (per week)
+Low-Growing Mixture,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Marigold, Crackerjack",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Monarch Butterfly Garden Mixture,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Phlox, Mixed Colors (Annual)",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Poppy, CA Formula",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Poppy, Red Corn",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Sweet Pea, Knee High",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Zinnia, California Giant",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Zinnia, State Fair Mixture",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Vetch, Hairy",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Vivant Hybrid Brassica,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Wheat SW535SR,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potato, German Butterball (Late), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Elba (Late), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Norwis (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Purple Viking (Early Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Red Gold (Early), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Adirondack Blue (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Adirondack Red (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Austrian Crescent (Long Season)",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Banana (Long Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Caribou Russet (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Chiefton (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Eva (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Kennebec (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Keuka Gold (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Red Maria (Late Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Red Norland (Early Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Yukon Gem (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+"Potatoes, Yukon Gold (Mid Season), Certified",24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Fall Green Manure MixCover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Peas and Oats MixOrganic Cover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Oats (Common)Organic Cover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Winter Rye (Common)Organic Cover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+BuckwheatCover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Hairy VetchOrganic Cover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Field Peas (Maxum)Cover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Crimson CloverCover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Buckwheat (Common)Organic Cover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Yellow MustardCover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Medium Red CloverOrganic Cover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Sweet CloverOrganic Cover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Mighty Mustard® Pacific GoldCover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+Summer AlfalfaCover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
+RyegrassCover Crop Seed,24°C,400 mm,15°C,70%,7 hours,65%,"['Loam', 'Sandy Loam', 'Clay Loam']",30 mm
