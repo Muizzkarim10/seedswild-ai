@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
 import json
-from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
+from selenium.common.exceptions import StaleElementReferenceException
 
 # Load the CSV file to fetch plant names
 csv_file_path = "sample.csv"  # Update to absolute path if needed
@@ -51,45 +51,51 @@ def random_delay(min_delay=1, max_delay=3):
     time.sleep(random.uniform(min_delay, max_delay))
 
 # Function to type a prompt in ChatGPT's dialog box
-def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=10):
+def type_prompt_in_chatgpt(plant_name, prompt_number):
     prompt_text = (
         f"Provide the following specific data in strict JSON format for the plant '{plant_name}' and only these attributes:\n"
         "{{\n"
         "  'Seed Name': '{plant_name}',\n"
-        "  'Temperature (2 m)': '24°C',\n"
-        "  'Precipitation': '400 mm',\n"
-        "  'Soil Temperature (0 to 6 cm)': '15°C',\n"
-        "  'Soil Moisture (0-3 cm)': '70%',\n"
-        "  'Sunshine Duration': '7 hours',\n"
-        "  'Humidity': '65%',\n"
+        "  'Temperature (2 m)': '24°C',\n"  # Single value for temperature
+        "  'Precipitation': '400 mm',\n"    # Single value for precipitation
+        "  'Soil Temperature (0 to 6 cm)': '15°C',\n"  # Single value for soil temperature
+        "  'Soil Moisture (0-3 cm)': '70%',\n"  # Single value for soil moisture
+        "  'Sunshine Duration': '7 hours',\n"  # Single value for sunshine duration
+        "  'Humidity': '65%',\n"  # Single value for humidity
         "  'Soil Type': ['Loam', 'Sandy Loam', 'Clay Loam'],\n"
-        "  'Watering (per week)': '30 mm '\n"
+        "  'Watering (per week)': '30 mm '\n"  # Single value for watering
         "}}\n"
         "Do not include any additional information or fields beyond the ones listed above."
     )
 
-    for attempt in range(retries):
+    try:
+        print(f"Locating the input box for prompt {prompt_number} (plant: {plant_name})...")
+
+        # Wait until the input box is clickable and then get the element again if stale
+        input_box = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, 'prompt-textarea'))
+        )
+
         try:
-            print(f"Attempting to send prompt for '{plant_name}' (Attempt {attempt + 1}/{retries})...")
-            # Wait for the input box to be visible and clickable
-            input_box = WebDriverWait(driver, wait_time).until(
-                EC.visibility_of_element_located((By.ID, 'prompt-textarea'))
+            input_box.click()
+            input_box.send_keys(prompt_text)
+            random_delay()  # Random delay before sending the prompt
+            input_box.send_keys(Keys.RETURN)  # Simulate pressing 'Enter' to send the message
+            print(f"Prompt {prompt_number} sent to ChatGPT for '{plant_name}'.")
+        except StaleElementReferenceException:
+            print(f"Stale element reference encountered for '{plant_name}', retrying...")
+            input_box = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.ID, 'prompt-textarea'))
             )
             input_box.click()
             input_box.send_keys(prompt_text)
             random_delay()
             input_box.send_keys(Keys.RETURN)
-            print(f"Prompt sent for '{plant_name}'.")
-            return True
-        except (StaleElementReferenceException, TimeoutException) as e:
-            logging.error(f"Error sending prompt for '{plant_name}': {e}")
-            print(f"Error sending prompt for '{plant_name}': {e}")
-            if attempt == retries - 1:
-                print(f"Failed to send prompt for '{plant_name}' after {retries} attempts. Stopping.")
-                return False  # Stop further attempts if it fails after retries
-            random_delay()
+            print(f"Prompt {prompt_number} sent after retry for '{plant_name}'.")
 
-    return False
+    except Exception as e:
+        logging.error(f"Failed to type prompt in ChatGPT for '{plant_name}': {e}")
+        print(f"Failed to type prompt in ChatGPT for '{plant_name}': {e}")
 
 # Function to extract the response
 def extract_response():
@@ -109,31 +115,29 @@ def extract_response():
         print(f"Failed to extract responses: {e}")
         return []
 
-# Collect data iteratively and save only once at the end
+# Collect all responses for all plants
 all_collected_data = []
-output_path = 'sheet4.csv'  # Specify output file
+prompt_count = 0  # Initialize prompt counter
 
+# Iterate over the plant names in the CSV and send the prompts
 for index, plant_name in enumerate(df['Names'], start=1):
-    print(f"Processing plant {index}/{len(df['Names'])}: {plant_name}")
+    prompt_count += 1  # Increment the prompt count for each plant
+    print(f"Prompt {prompt_count} (Plant {index}/{len(df['Names'])}): Sending prompt for '{plant_name}'")
+    type_prompt_in_chatgpt(plant_name, prompt_count)
+    random_delay()  # Random delay between requests to avoid rate limiting
 
-    # Attempt to type the prompt
-    if not type_prompt_in_chatgpt(plant_name):  # If sending the prompt fails
-        print(f"Stopping script as element not found for plant '{plant_name}'.")
-        break  # Exit the loop if element cannot be interacted with
+# Wait for all responses to be received
+collected_data = extract_response()
 
-    random_delay()
+# Check if responses were extracted and append to the all collected data list
+if collected_data:
+    all_collected_data.extend(collected_data)
 
-    # Attempt to extract response
-    response = extract_response()
-    if response:
-        all_collected_data.extend(response)
-
-# Save all collected data at the end
+# Save the data after all responses are received
 if all_collected_data:
-    # Save once at the end
-    pd.DataFrame(all_collected_data).to_csv(output_path, index=False)
+    output_df = pd.DataFrame(all_collected_data)
+    output_path = 'sheet2.csv'  # Absolute path for consistency
+    output_df.to_csv(output_path, index=False)
     print(f"All data saved to '{output_path}'.")
-else:
-    print("No data collected. Exiting.")
 
-print("Script finished.") 
+print("Script finished.")
