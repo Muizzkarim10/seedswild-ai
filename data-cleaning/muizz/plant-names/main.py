@@ -12,15 +12,9 @@ import logging
 import json
 from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
 
-# Load the CSV file to fetch plant names
-csv_file_path = "plant-names.csv"  # Update to absolute path if needed
+csv_file_path = "sample.csv"
 df = pd.read_csv(csv_file_path)
 
-# Configure logging
-logging.basicConfig(level=logging.DEBUG, filename='script_debug.log', filemode='w',
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
-# Start Chrome with remote debugging
 chrome_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
 remote_debugging_port = '9222'
 user_data_dir = r'C:\Users\Muizz\AppData\Local\Google\Chrome\User Data\Profile 3'
@@ -29,14 +23,11 @@ cmd = f'"{chrome_path}" --remote-debugging-port={remote_debugging_port} --user-d
 process = subprocess.Popen(cmd, shell=True)
 print("Chrome launched with remote debugging.")
 
-# Prompt user to manually log in and navigate to ChatGPT
 input("Press Enter after you have navigated to the ChatGPT chat box and logged in. Make sure Chrome is still open...")
 
-# Configure Selenium to attach to the existing Chrome session
 chrome_options = Options()
 chrome_options.add_experimental_option("debuggerAddress", "localhost:9222")
 
-# Try to connect to the existing Chrome session
 try:
     print("Attempting to connect to Chrome...")
     driver = webdriver.Chrome(options=chrome_options)
@@ -46,39 +37,18 @@ except Exception as e:
     print(f"Failed to connect to Chrome: {e}")
     exit()
 
-# Function to add random delay
 def random_delay(min_delay=3, max_delay=5):
     time.sleep(random.uniform(min_delay, max_delay))
 
-# Function to type a prompt in ChatGPT's dialog box
-def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=10):
+def type_prompt_in_chatgpt(plant_name, retries=2, wait_time=5):
     prompt_text = (
-        f" 'Seed Name': '{plant_name}',\n"
-        "  'Temperature (2 m)': ,\n"
-        "  'Precipitation': ,\n"
-        "  'Soil Temperature (0 to 6 cm)': ,\n"
-        "  'Soil Moisture (0-3 cm)': ,\n"
-        "  'Sunshine Duration': ,\n"
-        "  'Humidity': ,\n"
-        "  'Soil Type': ,\n"
-        "  'Soil pH': ,\n"
-        "  'Spacing': ,\n"
-        "  'Seed depth': ,\n"
-        "  'Hardiness zone': ,\n"
-        "  'Watering (per week)':\n"
-        "}}\n"
-        "Ensure the response is concise and includes only the requested attributes in the specified format."
-        f"For the plant '{plant_name}', provide a data profile strictly in JSON format. "
-        "The response must include only the specified attributes, with accurate numeric values where applicable. "
-        "Do not include units, explanations, or any additional information.\n"
-        "{{\n"
+        f"Plant name: {plant_name}"
     )
 
 
     for attempt in range(retries):
         try:
             print(f"Attempting to send prompt for '{plant_name}' (Attempt {attempt + 1}/{retries})...")
-            # Wait for the input box to be visible and clickable
             input_box = WebDriverWait(driver, wait_time).until(
                 EC.visibility_of_element_located((By.ID, 'prompt-textarea'))
             )
@@ -93,12 +63,11 @@ def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=10):
             print(f"Error sending prompt for '{plant_name}': {e}")
             if attempt == retries - 1:
                 print(f"Failed to send prompt for '{plant_name}' after {retries} attempts. Stopping.")
-                return False  # Stop further attempts if it fails after retries
+                return False  
             random_delay()
 
     return False
 
-# Function to extract the response
 def extract_response():
     try:
         response_elements = driver.find_elements(By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json')
@@ -116,31 +85,34 @@ def extract_response():
         print(f"Failed to extract responses: {e}")
         return []
 
-# Collect data iteratively and save only once at the end
 all_collected_data = []
-output_path = 'test-sheet.csv'  # Specify output file
+output_path = 'common-plants1.csv'
 
 for index, plant_name in enumerate(df['Names'], start=1):
     print(f"Processing plant {index}/{len(df['Names'])}: {plant_name}")
 
-    # Attempt to type the prompt
-    if not type_prompt_in_chatgpt(plant_name):  # If sending the prompt fails
+    if not type_prompt_in_chatgpt(plant_name): 
         print(f"Stopping script as element not found for plant '{plant_name}'.")
-        break  # Exit the loop if element cannot be interacted with
+        break
 
     random_delay()
 
-    # Attempt to extract response
     response = extract_response()
     if response:
         all_collected_data.extend(response)
 
-# Save all collected data at the end
 if all_collected_data:
-    # Save once at the end
     pd.DataFrame(all_collected_data).to_csv(output_path, index=False)
     print(f"All data saved to '{output_path}'.")
 else:
     print("No data collected. Exiting.")
 
 print("Script finished.") 
+
+
+
+#  "Please categorize the following plant as either 'Yes' for common or 'No' if not common"
+#  "A plant is considered 'common' if it is frequently grown in gardens or as an ornamental plant. "
+#  "Exclude weeds, wild plants, and plants typically found in the sea (like seaweed and mangroves) 
+#   from being categorized as common. "
+#  "Provide the result strictly in JSON format.\n\n"
