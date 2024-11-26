@@ -1,0 +1,47 @@
+2024-11-21 21:36:50,391 - DEBUG - Selenium Manager binary found at: C:\Users\FAWAD\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-11-21 21:36:50,391 - DEBUG - Executing process: C:\Users\FAWAD\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-11-21 21:36:50,496 - DEBUG - chromedriver not found in PATH
+2024-11-21 21:36:50,496 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-11-21 21:36:50,496 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-11-21 21:36:50,496 - DEBUG - Output: ""
+2024-11-21 21:36:50,501 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2024-11-21 21:36:50,501 - DEBUG - Output: "\r\nHKEY_CURRENT_USER\\Software\\Google\\Chrome\\BLBeacon\r\n    version    REG_SZ    131.0.6778.85\r\n"
+2024-11-21 21:36:50,501 - DEBUG - Detected browser: chrome 131.0.6778.85
+2024-11-21 21:36:50,501 - DEBUG - Required driver: chromedriver 131.0.6778.85
+2024-11-21 21:36:50,501 - DEBUG - chromedriver 131.0.6778.85 already in the cache
+2024-11-21 21:36:50,501 - DEBUG - Driver path: C:\Users\FAWAD\.cache\selenium\chromedriver\win64\131.0.6778.85\chromedriver.exe
+2024-11-21 21:36:50,501 - DEBUG - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-11-21 21:36:50,504 - DEBUG - Started executable: `C:\Users\FAWAD\.cache\selenium\chromedriver\win64\131.0.6778.85\chromedriver.exe` in a child process with pid: 2120 using 0 to output -3
+2024-11-21 21:36:51,022 - DEBUG - POST http://localhost:54265/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'debuggerAddress': 'localhost:9222', 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+2024-11-21 21:36:51,022 - DEBUG - Starting new HTTP connection (1): localhost:54265
+2024-11-21 21:36:51,393 - DEBUG - http://localhost:54265 "POST /session HTTP/11" 200 0
+2024-11-21 21:36:51,393 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.85","chrome":{"chromedriverVersion":"131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285})"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:9222"},"pageLoadStrategy":"normal","platformName":"","proxy":{},"setWindowRect":false,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"fe9f7b8b514da339d7557adeeefd23b1"}} | headers=HTTPHeaderDict({'Content-Length': '759', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 21:36:51,393 - DEBUG - Finished Request
+2024-11-21 21:36:51,393 - DEBUG - GET http://localhost:54265/session/fe9f7b8b514da339d7557adeeefd23b1/title {}
+2024-11-21 21:36:51,403 - DEBUG - http://localhost:54265 "GET /session/fe9f7b8b514da339d7557adeeefd23b1/title HTTP/11" 200 0
+2024-11-21 21:36:51,403 - DEBUG - Remote response: status=200 | data={"value":"ChatGPT"} | headers=HTTPHeaderDict({'Content-Length': '19', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 21:36:51,403 - DEBUG - Finished Request
+2024-11-21 21:36:51,405 - DEBUG - POST http://localhost:54265/session/fe9f7b8b514da339d7557adeeefd23b1/element {'using': 'css selector', 'value': '[id="prompt-textarea"]'}
+2024-11-21 21:36:51,413 - DEBUG - http://localhost:54265 "POST /session/fe9f7b8b514da339d7557adeeefd23b1/element HTTP/11" 200 0
+2024-11-21 21:36:51,413 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 21:36:51,413 - DEBUG - Finished Request
+2024-11-21 21:36:51,481 - DEBUG - POST http://localhost:54265/session/fe9f7b8b514da339d7557adeeefd23b1/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7'}]}
+2024-11-21 21:36:51,494 - DEBUG - http://localhost:54265 "POST /session/fe9f7b8b514da339d7557adeeefd23b1/execute/sync HTTP/11" 200 0
+2024-11-21 21:36:51,494 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 21:36:51,494 - DEBUG - Finished Request
+2024-11-21 21:36:51,494 - DEBUG - GET http://localhost:54265/session/fe9f7b8b514da339d7557adeeefd23b1/element/f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7/enabled {}
+2024-11-21 21:36:51,502 - DEBUG - http://localhost:54265 "GET /session/fe9f7b8b514da339d7557adeeefd23b1/element/f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7/enabled HTTP/11" 200 0
+2024-11-21 21:36:51,502 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 21:36:51,502 - DEBUG - Finished Request
+2024-11-21 21:36:51,502 - DEBUG - POST http://localhost:54265/session/fe9f7b8b514da339d7557adeeefd23b1/element/f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7/click {}
+2024-11-21 21:36:51,613 - DEBUG - http://localhost:54265 "POST /session/fe9f7b8b514da339d7557adeeefd23b1/element/f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7/click HTTP/11" 200 0
+2024-11-21 21:36:51,613 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 21:36:51,613 - DEBUG - Finished Request
+2024-11-21 21:36:51,613 - DEBUG - POST http://localhost:54265/session/fe9f7b8b514da339d7557adeeefd23b1/element/f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7/value {'text': 'List some popular car brands.', 'value': ['L', 'i', 's', 't', ' ', 's', 'o', 'm', 'e', ' ', 'p', 'o', 'p', 'u', 'l', 'a', 'r', ' ', 'c', 'a', 'r', ' ', 'b', 'r', 'a', 'n', 'd', 's', '.']}
+2024-11-21 21:36:52,022 - DEBUG - http://localhost:54265 "POST /session/fe9f7b8b514da339d7557adeeefd23b1/element/f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7/value HTTP/11" 200 0
+2024-11-21 21:36:52,022 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 21:36:52,022 - DEBUG - Finished Request
+2024-11-21 21:36:53,111 - DEBUG - POST http://localhost:54265/session/fe9f7b8b514da339d7557adeeefd23b1/element/f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7/value {'text': '\ue006', 'value': ['\ue006']}
+2024-11-21 21:36:53,421 - DEBUG - http://localhost:54265 "POST /session/fe9f7b8b514da339d7557adeeefd23b1/element/f.374843AAF73CF8C43BBEF00A1D9632A5.d.D6D01193948EABA0801A75F34130EB0A.e.7/value HTTP/11" 200 0
+2024-11-21 21:36:53,421 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-21 21:36:53,421 - DEBUG - Finished Request
