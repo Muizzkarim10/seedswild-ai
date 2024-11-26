@@ -1,0 +1,46 @@
+2024-11-08 23:39:56,142 - DEBUG - Selenium Manager binary found at: C:\Users\FAWAD\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-11-08 23:39:56,142 - DEBUG - Executing process: C:\Users\FAWAD\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-11-08 23:39:57,242 - DEBUG - Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "windows", arch: "amd64", lang: "python", selenium_version: "4.26" }
+2024-11-08 23:39:57,242 - DEBUG - chromedriver not found in PATH
+2024-11-08 23:39:57,242 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-11-08 23:39:57,242 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-11-08 23:39:57,242 - DEBUG - Output: ""
+2024-11-08 23:39:57,242 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2024-11-08 23:39:57,242 - DEBUG - Output: "\r\nHKEY_CURRENT_USER\\Software\\Google\\Chrome\\BLBeacon\r\n    version    REG_SZ    130.0.6723.117\r\n"
+2024-11-08 23:39:57,242 - DEBUG - Detected browser: chrome 130.0.6723.117
+2024-11-08 23:39:57,242 - DEBUG - Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+2024-11-08 23:39:57,242 - DEBUG - Required driver: chromedriver 130.0.6723.116
+2024-11-08 23:39:57,242 - DEBUG - chromedriver 130.0.6723.116 already in the cache
+2024-11-08 23:39:57,242 - DEBUG - Driver path: C:\Users\FAWAD\.cache\selenium\chromedriver\win64\130.0.6723.116\chromedriver.exe
+2024-11-08 23:39:57,242 - DEBUG - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-11-08 23:39:57,565 - DEBUG - Started executable: `C:\Users\FAWAD\.cache\selenium\chromedriver\win64\130.0.6723.116\chromedriver.exe` in a child process with pid: 23340 using 0 to output -3
+2024-11-08 23:39:58,090 - DEBUG - POST http://localhost:50409/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'debuggerAddress': 'localhost:9222', 'extensions': [], 'binary': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'args': []}}}}
+2024-11-08 23:39:58,090 - DEBUG - Starting new HTTP connection (1): localhost:50409
+2024-11-08 23:40:58,291 - DEBUG - http://localhost:50409 "POST /session HTTP/11" 500 0
+2024-11-08 23:40:58,291 - DEBUG - Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: cannot connect to chrome at localhost:9222\nfrom chrome not reachable","stacktrace":"\tGetHandleVerifier [0x00007FF6212C38A5+3004357]\n\t(No symbol) [0x00007FF620F59970]\n\t(No symbol) [0x00007FF620E05659]\n\t(No symbol) [0x00007FF620DF729D]\n\t(No symbol) [0x00007FF620E432A2]\n\t(No symbol) [0x00007FF620E385C5]\n\t(No symbol) [0x00007FF620E86E01]\n\t(No symbol) [0x00007FF620E86480]\n\t(No symbol) [0x00007FF620E7B983]\n\t(No symbol) [0x00007FF620E47628]\n\t(No symbol) [0x00007FF620E48791]\n\tGetHandleVerifier [0x00007FF6212EA00D+3161901]\n\tGetHandleVerifier [0x00007FF62133E060+3506048]\n\tGetHandleVerifier [0x00007FF62133400D+3465005]\n\tGetHandleVerifier [0x00007FF6210B0EEB+830987]\n\t(No symbol) [0x00007FF620F6467F]\n\t(No symbol) [0x00007FF620F609D4]\n\t(No symbol) [0x00007FF620F60B6D]\n\t(No symbol) [0x00007FF620F50149]\n\tBaseThreadInitThunk [0x00007FFFCE8CDBE7+23]\n\tRtlUserThreadStart [0x00007FFFCFAA5A4C+44]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1006', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-11-08 23:40:58,291 - DEBUG - Finished Request
+2024-11-08 23:41:00,336 - ERROR - Failed to connect to Chrome: Message: session not created: cannot connect to chrome at localhost:9222
+from chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x00007FF6212C38A5+3004357]
+	(No symbol) [0x00007FF620F59970]
+	(No symbol) [0x00007FF620E05659]
+	(No symbol) [0x00007FF620DF729D]
+	(No symbol) [0x00007FF620E432A2]
+	(No symbol) [0x00007FF620E385C5]
+	(No symbol) [0x00007FF620E86E01]
+	(No symbol) [0x00007FF620E86480]
+	(No symbol) [0x00007FF620E7B983]
+	(No symbol) [0x00007FF620E47628]
+	(No symbol) [0x00007FF620E48791]
+	GetHandleVerifier [0x00007FF6212EA00D+3161901]
+	GetHandleVerifier [0x00007FF62133E060+3506048]
+	GetHandleVerifier [0x00007FF62133400D+3465005]
+	GetHandleVerifier [0x00007FF6210B0EEB+830987]
+	(No symbol) [0x00007FF620F6467F]
+	(No symbol) [0x00007FF620F609D4]
+	(No symbol) [0x00007FF620F60B6D]
+	(No symbol) [0x00007FF620F50149]
+	BaseThreadInitThunk [0x00007FFFCE8CDBE7+23]
+	RtlUserThreadStart [0x00007FFFCFAA5A4C+44]
+
