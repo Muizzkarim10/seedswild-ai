@@ -51,25 +51,25 @@ def random_delay(min_delay=1, max_delay=3):
     time.sleep(random.uniform(min_delay, max_delay))
 
 # Function to type a prompt in ChatGPT's dialog box
-def type_prompt_in_chatgpt(plant_name, prompt_number):
+def type_prompt_in_chatgpt(plant_name):
     prompt_text = (
         f"Provide the following specific data in strict JSON format for the plant '{plant_name}' and only these attributes:\n"
         "{{\n"
         "  'Seed Name': '{plant_name}',\n"
-        "  'Temperature (2 m)': '24°C',\n"  # Single value for temperature
-        "  'Precipitation': '400 mm',\n"    # Single value for precipitation
-        "  'Soil Temperature (0 to 6 cm)': '15°C',\n"  # Single value for soil temperature
-        "  'Soil Moisture (0-3 cm)': '70%',\n"  # Single value for soil moisture
-        "  'Sunshine Duration': '7 hours',\n"  # Single value for sunshine duration
-        "  'Humidity': '65%',\n"  # Single value for humidity
+        "  'Temperature (2 m)': '18-29°C',\n"
+        "  'Precipitation': '300-500 mm',\n"
+        "  'Soil Temperature (0 to 6 cm)': '12-18°C',\n"
+        "  'Soil Moisture (0-3 cm)': '60-80%',\n"
+        "  'Sunshine Duration': '6-8 hours',\n"
+        "  'Humidity': '60-75%',\n"
         "  'Soil Type': ['Loam', 'Sandy Loam', 'Clay Loam'],\n"
-        "  'Watering (per week)': '30 mm '\n"  # Single value for watering
+        "  'Watering': '25-35 mm per week'\n"
         "}}\n"
         "Do not include any additional information or fields beyond the ones listed above."
     )
 
     try:
-        print(f"Locating the input box for prompt {prompt_number} (plant: {plant_name})...")
+        print(f"Locating the input box for plant: {plant_name}...")
 
         # Wait until the input box is clickable and then get the element again if stale
         input_box = WebDriverWait(driver, 10).until(
@@ -81,9 +81,9 @@ def type_prompt_in_chatgpt(plant_name, prompt_number):
             input_box.send_keys(prompt_text)
             random_delay()  # Random delay before sending the prompt
             input_box.send_keys(Keys.RETURN)  # Simulate pressing 'Enter' to send the message
-            print(f"Prompt {prompt_number} sent to ChatGPT for '{plant_name}'.")
+            print(f"Prompt sent to ChatGPT for {plant_name}.")
         except StaleElementReferenceException:
-            print(f"Stale element reference encountered for '{plant_name}', retrying...")
+            print(f"Stale element reference encountered for {plant_name}, retrying...")
             input_box = WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.ID, 'prompt-textarea'))
             )
@@ -91,53 +91,64 @@ def type_prompt_in_chatgpt(plant_name, prompt_number):
             input_box.send_keys(prompt_text)
             random_delay()
             input_box.send_keys(Keys.RETURN)
-            print(f"Prompt {prompt_number} sent after retry for '{plant_name}'.")
+            print(f"Prompt sent after retry for {plant_name}.")
+
+        # Wait for the response (adjust this delay as needed)
+        time.sleep(random.uniform(5, 10))  # Adjust if necessary
+        return plant_name
 
     except Exception as e:
-        logging.error(f"Failed to type prompt in ChatGPT for '{plant_name}': {e}")
-        print(f"Failed to type prompt in ChatGPT for '{plant_name}': {e}")
+        logging.error(f"Failed to type prompt in ChatGPT for {plant_name}: {e}")
+        print(f"Failed to type prompt in ChatGPT for {plant_name}: {e}")
 
 # Function to extract the response
 def extract_response():
     try:
-        response_elements = driver.find_elements(By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json')
-        responses = []
+        response_element = WebDriverWait(driver, 15).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json'))
+        )
 
-        for response_element in response_elements:
-            response_text = response_element.text
-            plant_data = json.loads(response_text)
-            responses.append(plant_data)
+        response_text = response_element.text
 
-        return responses
+        # Parse the JSON response
+        plant_data = json.loads(response_text)
+        return plant_data
 
     except Exception as e:
-        logging.error(f"Failed to extract responses: {e}")
-        print(f"Failed to extract responses: {e}")
-        return []
+        logging.error(f"Failed to extract response: {e}")
+        print(f"Failed to extract response: {e}")
+        return {}
 
-# Collect all responses for all plants
-all_collected_data = []
-prompt_count = 0  # Initialize prompt counter
+# Collect all responses
+collected_data = []
 
 # Iterate over the plant names in the CSV and send the prompts
-for index, plant_name in enumerate(df['Names'], start=1):
-    prompt_count += 1  # Increment the prompt count for each plant
-    print(f"Prompt {prompt_count} (Plant {index}/{len(df['Names'])}): Sending prompt for '{plant_name}'")
-    type_prompt_in_chatgpt(plant_name, prompt_count)
-    random_delay()  # Random delay between requests to avoid rate limiting
+for plant_name in df['Names']:
+    type_prompt_in_chatgpt(plant_name)
+    time.sleep(random.uniform(2, 5))  # Random delay between requests to avoid rate limiting
 
-# Wait for all responses to be received
-collected_data = extract_response()
+    # Extract the response after sending the prompt
+    plant_data = extract_response()
 
-# Check if responses were extracted and append to the all collected data list
-if collected_data:
-    all_collected_data.extend(collected_data)
+    # Check if the response was valid and append
+    if plant_data:
+        formatted_data = {
+            "Seed Name": plant_data.get("Seed Name", ""),
+            "Temperature (2 m)": plant_data.get("Temperature (2 m)", ""),
+            "Precipitation": plant_data.get("Precipitation", ""),
+            "Soil Temperature (0 to 6 cm)": plant_data.get("Soil Temperature (0 to 6 cm)", ""),
+            "Soil Moisture (0-3 cm)": plant_data.get("Soil Moisture (0-3 cm)", ""),
+            "Sunshine Duration": plant_data.get("Sunshine Duration", ""),
+            "Humidity": plant_data.get("Humidity", ""),
+            "Soil Type": plant_data.get("Soil Type", ""),
+            "Watering": plant_data.get("Watering", "")
+        }
+        collected_data.append(formatted_data)
 
-# Save the data after all responses are received
-if all_collected_data:
-    output_df = pd.DataFrame(all_collected_data)
-    output_path = 'sheet2.csv'  # Absolute path for consistency
-    output_df.to_csv(output_path, index=False)
-    print(f"All data saved to '{output_path}'.")
+        # Save the data immediately to CSV after processing the current plant
+        output_df = pd.DataFrame(collected_data)
+        output_path = 'plant_data.csv'  # Absolute path for consistency
+        output_df.to_csv(output_path, index=False)
+        print(f"Data saved for {plant_name} to '{output_path}'")
 
-print("Script finished.")
+print("All data processed and saved.")
