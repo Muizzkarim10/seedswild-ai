@@ -37,7 +37,7 @@ logging.basicConfig(level=logging.DEBUG, filename='script_debug.log', filemode='
 # Start Chrome with remote debugging
 chrome_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
 remote_debugging_port = '9222'
-user_data_dir = r'C:\Users\FAWAD\AppData\Local\Google\Chrome\User Data\Profile 4'
+user_data_dir = r'C:\Users\FAWAD\AppData\Local\Google\Chrome\User Data\Profile 2'
 
 cmd = f'"{chrome_path}" --remote-debugging-port={remote_debugging_port} --user-data-dir="{user_data_dir}"'
 process = subprocess.Popen(cmd, shell=True)
@@ -59,27 +59,13 @@ except Exception as e:
     print(f"Failed to connect to Chrome: {e}")
     exit()
 
-# Checkpoint file to track processed seeds
-checkpoint_file = "processed_plants.txt"
-
-if os.path.exists(checkpoint_file):
-    with open(checkpoint_file, "r") as file:
-        processed_seeds = set(line.strip() for line in file)
-else:
-    processed_seeds = set()
-
-# Function to update the checkpoint file
-def update_checkpoint(plant_name):
-    with open(checkpoint_file, "a") as file:
-        file.write(f"{plant_name}\n")
-
 # Function to add random delay
 def random_delay(min_delay=3, max_delay=5):
     time.sleep(random.uniform(min_delay, max_delay))
 
 # Function to type a prompt in ChatGPT's dialog box
 def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=10):
-    prompt_text = f"I'm ordering you to respond in JSON format. Yes or No: Do people commonly grow the plant '{plant_name}' in their gardens or homes?"
+    prompt_text = f"Respond in only json format to my question and it could be only respone :  yes or no nothing else. Do people commonly grow the plant '{plant_name}' in their gardens or homes? Yes or No?"
 
     for attempt in range(retries):
         try:
@@ -142,10 +128,6 @@ for index, row in df.iterrows():
 
     plant_name = row['Seed_Name']
 
-    if plant_name in processed_seeds:
-        print(f"Seed '{plant_name}' is already processed. Skipping.")
-        continue
-
     print(f"Processing plant {index + 1}/{len(df)}: {plant_name}")
 
     if not type_prompt_in_chatgpt(plant_name):
@@ -171,8 +153,6 @@ for index, row in df.iterrows():
         df = df.drop(index)
         df.to_csv(csv_file_path, index=False)
         print(f"Seed '{plant_name}' removed from fawad.csv.")
-        processed_seeds.add(plant_name)
-        update_checkpoint(plant_name)
         response_counter += 1
     else:
         print(f"No valid response received for '{plant_name}'. Skipping.")
@@ -181,3 +161,4 @@ if df.empty:
     print("All rows processed. fawad.csv is now empty.")
 
 print("Script finished.")
+
