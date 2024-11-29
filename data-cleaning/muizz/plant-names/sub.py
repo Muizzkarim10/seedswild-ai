@@ -9,11 +9,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
-import json
 from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
 
-csv_file_path = "sample.csv"
-df = pd.read_csv(csv_file_path)
+csv_file_path = "sample.csv"  
+df = pd.read_csv(csv_file_path, encoding='latin1') 
 
 chrome_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
 remote_debugging_port = '9222'
@@ -40,12 +39,14 @@ except Exception as e:
 def random_delay(min_delay=3, max_delay=5):
     time.sleep(random.uniform(min_delay, max_delay))
 
-def type_prompt_in_chatgpt(plant_name, retries=2, wait_time=5):
+def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=5):
     prompt_text = (
-        f"Plant name: {plant_name}"
-    )
-
-
+    "Is the plant common or not? A plant is considered 'common' if it is frequently grown in gardens "
+    "or as an ornamental plant. Exclude weeds, wild plants, and plants typically found in the sea "
+    "(like seaweed and mangroves) from being categorized as common. "
+    "Respond only in this JSON format: {{'response': 'Yes' or 'No'}}."
+    f"Plant name : '{plant_name}'"
+)
     for attempt in range(retries):
         try:
             print(f"Attempting to send prompt for '{plant_name}' (Attempt {attempt + 1}/{retries})...")
@@ -53,6 +54,7 @@ def type_prompt_in_chatgpt(plant_name, retries=2, wait_time=5):
                 EC.visibility_of_element_located((By.ID, 'prompt-textarea'))
             )
             input_box.click()
+            input_box.clear() 
             input_box.send_keys(prompt_text)
             random_delay()
             input_box.send_keys(Keys.RETURN)
@@ -63,35 +65,47 @@ def type_prompt_in_chatgpt(plant_name, retries=2, wait_time=5):
             print(f"Error sending prompt for '{plant_name}': {e}")
             if attempt == retries - 1:
                 print(f"Failed to send prompt for '{plant_name}' after {retries} attempts. Stopping.")
-                return False  
+                return False 
             random_delay()
 
     return False
 
 def extract_response():
     try:
-        response_elements = driver.find_elements(By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json')
-        responses = []
-
-        for response_element in response_elements:
-            response_text = response_element.text
-            plant_data = json.loads(response_text)
-            responses.append(plant_data)
-
-        return responses
-
+        response_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.overflow-y-auto.p-4 code.hljs.language-json')) 
+        )
+        response_text = response_element.text.strip()
+        print(f"Extracted raw response: {response_text}")
+        
+        try:
+            response_dict = eval(response_text) 
+            return response_dict.get("response", "").lower()
+        except (SyntaxError, NameError):
+            print("Failed to parse response as dictionary. Raw text:", response_text)
+            return None
+    except TimeoutException:
+        print("No response element found within the timeout period.")
+        return None
     except Exception as e:
         logging.error(f"Failed to extract responses: {e}")
         print(f"Failed to extract responses: {e}")
-        return []
+        return None
 
-all_collected_data = []
-output_path = 'common-plants1.csv'
 
-for index, plant_name in enumerate(df['Names'], start=1):
-    print(f"Processing plant {index}/{len(df['Names'])}: {plant_name}")
+output_path = 'temp.csv'
+filtered_rows = []
 
-    if not type_prompt_in_chatgpt(plant_name): 
+try:
+    existing_df = pd.read_csv(output_path)
+except FileNotFoundError:
+    existing_df = pd.DataFrame(columns=df.columns)
+
+for index, row in df.iterrows():
+    plant_name = row['Names']
+    print(f"Processing plant {index + 1}/{len(df)}: {plant_name}")
+
+    if not type_prompt_in_chatgpt(plant_name):
         print(f"Stopping script as element not found for plant '{plant_name}'.")
         break
 
@@ -99,17 +113,27 @@ for index, plant_name in enumerate(df['Names'], start=1):
 
     response = extract_response()
     if response:
-        all_collected_data.extend(response)
+        print(f"Response for '{plant_name}': {response}")
+        if response == "yes": 
+            filtered_rows.append(row) 
+            print(f"Seed '{plant_name}' saved.")
+        elif response == "no":
+            print(f"Seed '{plant_name}' was not saved because response was 'No'.")
+    else:
+        print(f"No valid response received for '{plant_name}'. Skipping.")
 
-if all_collected_data:
-    pd.DataFrame(all_collected_data).to_csv(output_path, index=False)
-    print(f"All data saved to '{output_path}'.")
-else:
-    print("No data collected. Exiting.")
+    if filtered_rows:
+        filtered_df = pd.DataFrame(filtered_rows, columns=df.columns)  
+        filtered_df.to_csv(output_path, mode='w', index=False)
+        print(f"Data saved to '{output_path}' after processing '{plant_name}'.")
 
-print("Script finished.") 
+if not filtered_rows:
+    print("No rows matched the criteria. Exiting.")
 
-#  "Respond only in this JSON format: {{'response': 'Yes' or 'No'}}."
+print("Script finished.")
+
+
+#  "Respond only in this  json format: {{'response': 'Yes' or 'No'}}."
 #  "i am provinding a sinle plant name in a single prompt dont divide that name into two."
 #  "A plant is considered 'common' if it is frequently grown in gardens or as an ornamental plant. "
 #  "Exclude weeds, wild plants, and plants typically found in the sea (like seaweed and mangroves) 

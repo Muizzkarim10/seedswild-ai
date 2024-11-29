@@ -1,50 +1,51 @@
-Names
-Monarde citron
-Montana Jack
-Moravsky Div
-Morden Early
-Mortgage Lifter Tomato
-Mustard
-Moskvich Tomato
-Yellow Sweet Mountain
-Fennel
-girl
-grape
-Naples
-Eggplant
-Winter Squash
-Neckarpearl
-blue penguin
-neem seed
-Japanese cucumber
-Tuscan Kale
-Black Carmine
-Black Caluire Onion
-Berlandier's nopode
-Sweet Orange
-Oaxacan Rose
-Sunflower
-round odesa
-Dill
-ogen
-ohio dutch
-Okinawa
-corn
-Sea buckthorn
-Opalka Tomato
-woad
-orange
-Orange Banana Seed
-Burgundy Orange
-orange centiflor
-pumpkin seed
-marigold
-Strawberry
-Oregon Spring
-Orenburg
-white water lily
-oriole seed
-Rice
-Purple Osaka
-White Oscar
-caraway
+Names,Soil_Types,Plant_Category,Season,Watering,Fertilization_List,Fertilization_Time,Best_Growing_Areas,Temperature,Soil_Temperature,Precipitation,Soil_Moisture,Sunshine_Duration,Humid
+abutilon abutiloides,"[""Loamy"",""Sandy""]",Flowering plant,"[""Summer"",""Rainy season""]",48,"[""Organic compost"",""Slow-release fertilizer""]",4,"[""Tropical regions"",""Subtropical regions""]",25.0,20.0,750.0,0.3,20000,70
+abutilon americanum,"[""Loamy"",""Sandy""]",Herbaceous Perennial,"[""Spring"",""Summer""]",03-Feb,"[""NPK 20-20-20"",""Organic compost""]",4,"[""Central America"",""South America"",""Southeast Asia""]",24.0,25.0,1200.0,0.3,22000,60
+abutilon jacquinii,"[""Loamy"",""Sandy""]",Shrub,"[""Late spring"",""Summer""]",03-Feb,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Subtropical regions"",""Mediterranean climates""]",22.5,20.0,750.0,0.35,30000,70
+abutilon lignosum,"[""Loamy"",""Sandy""]",Shrub,"[""Summer""]",12-24 hours interval,"[""Nitrogen-based"",""Phosphorus-based""]",4 (weeks interval),"[""Tropical regions""]",24.0,22.5,650.0,0.3,20000,60
+abietinella abietina,"[""Sandy loam"",""Clay loam"",""Peat moss""]",Moss,"[""Spring"",""Summer""]",48,"[""NPK fertilizer"",""Organic compost""]",4,"[""Temperate forests"",""Alpine regions""]",15.0,10.0,750.0,0.35,20000,80
+hypnum abietinum,"[""Loam"",""Sandy loam"",""Peat""]",Moss,"[""Spring"",""Autumn""]",48,"[""Organic matter"",""Moss-specific fertilizers""]",12,"[""Cool and moist forests"",""Shaded areas with high humidity""]",15.0,10.0,750.0,0.45,20000,80
+thuidium abietinum,"[""Sandy"",""Loamy"",""Clayey""]",Moss,"[""Spring"",""Summer"",""Fall""]",12,"[""Organic compost"",""Peat moss""]",8,"[""Temperate forests"",""Boreal forests"",""Mountainous regions""]",15.0,10.0,750.0,0.35,8000,70
+abronias,"[""Sandy soil"",""Loamy soil"",""Well-draining soil""]",Flowering plant,"[""Late spring"",""Summer""]",12,"[""Organic compost"",""Slow-release granular fertilizer""]",4,"[""Rocky slopes"",""Coastal areas""]",15.0,20.0,300.0,0.3,22000,70
+abies alba,"[""Loamy"",""Sandy"",""Clayey""]",Coniferous,"[""Spring"",""Summer"",""Autumn""]",48 hours interval,"[""Nitrogen"",""Phosphorus"",""Potassium""]",6 weeks interval,"[""Central Europe"",""Eastern Europe"",""Caucasus""]",7.5,10.0,1000.0,0.3,1800,80
+abies amabilis,"[""Loamy"",""Sandy"",""Well-drained""]",Evergreen Tree,"[""Spring"",""Summer""]",2-3 hours interval,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4 weeks interval,"[""Pacific Northwest"",""British Columbia"",""Alaska""]",9.5,7.5,2500.0,0.4,1600,80
+abronias fendleri,"[""Sandy"",""Loamy"",""Silty""]",Flowering Plant,"[""Spring"",""Summer""]",2,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Southwestern United States"",""Northern Mexico""]",20.0,17.5,400.0,0.3,25000,60
+abronio torreyi,"[""Sandy Loam"",""Loamy Sand""]",Flowering Plant,"[""Spring"",""Summer""]",2,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Southern California"",""Baja California""]",17.5,22.5,375.0,0.2,4000,60
+abronias argillosa,"[""Sandy"",""Loamy"",""Clayey""]",Flowering plant,"[""Spring"",""Summer""]",2-3 hours interval,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4-6 weeks interval,"[""California"",""Arizona"",""Nevada""]",20.0,22.5,200.0,0.3,5000,60
+abutilon auritum,"[""Loamy"",""Sandy"",""Clayey""]",Shrub,"[""Spring"",""Summer""]",48,"[""NPK fertilizer"",""Organic compost""]",4,"[""Tropical regions"",""Subtropical regions""]",22.5,22.5,750.0,0.3,23000,70
+abroma augustum,"[""Loamy"",""Sandy""]",Shrub,"[""Start of summer"",""Monsoon""]",2-3 hours interval,"[""Nitrogen-based fertilizer"",""Phosphorus-based fertilizer""]",4 weeks interval,"[""Tropical regions"",""Subtropical regions""]",25.0,30.0,1500.0,0.45,14000,70
+abroma augusta,"[""Loamy"",""Sandy""]",Shrub,"[""Spring"",""Summer""]",03-Feb,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Tropical regions"",""Subtropical regions""]",25.0,27.5,125.0,0.3,25000,80
+ambroma augusta,"[""Well-drained"",""Loamy""]",Flowering Plant,"[""Spring"",""Summer"",""Autumn""]",24,"[""Organic fertilizer"",""NPK fertilizers""]",4,"[""Tropical regions"",""Subtropical regions""]",27.5,27.5,150.0,0.3,20000,80
+ambroma augustum,"[""Loamy"",""Sandy""]",Herbaceous perennial,"[""Summer""]",48 hours interval,"[""Organic fertilizer"",""Slow-release fertilizer""]",4 weeks interval,"[""Tropical regions""]",25.0,27.5,1500.0,0.4,30000,80
+balsam fir,"[""Sandy loam"",""Clay loam"",""Loam""]",Tree,"[""Spring"",""Summer""]",48 hours interval,"[""Nitrogen-based"",""Phosphorus-based"",""Potassium-based""]",4 weeks interval,"[""Northern United States"",""Canada"",""Scandinavia""]",-7.5,10.0,1000.0,0.375,22000,70
+pinus balsamea,"[""Loamy"",""Sandy"",""Clayey""]",Evergreen tree,"[""Late spring"",""Summer"",""Early fall""]",Every 7-10 days,"[""Nitrogen"",""Phosphorus"",""Potassium""]",Every 6 weeks,"[""Eastern North America"",""Eastern Canada"",""Northern United States""]",-5.0,7.5,1000.0,0.3,25000,80
+abies ×phanerolepis,"[""Loamy"",""Sandy"",""Clay""]",Tree,"[""Spring"",""Summer""]",48 hours interval,"[""Nitrogen-based fertilizers"",""Phosphorus-based fertilizers""]",4 weeks interval,"[""Mountainous regions"",""Cool temperate areas""]",2.5,8.5,1200.0,0.45,25000,70
+abutilon berlandieri,"[""Sandy Loam"",""Clay Loam""]",Perennial,"[""Spring"",""Summer""]",03-Feb,"[""Nitrogen"",""Phosphorus"",""Potassium""]",06-Apr,"[""Southwestern United States"",""Northern Mexico""]",22.5,22.5,650.0,0.3,2500,60
+abutilon californicum,"[""Loam"",""Sandy Loam"",""Clay Loam""]",Shrub,"[""Spring"",""Summer""]",03-Feb,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""California"",""Arizona"",""Nevada""]",17.5,20.0,450.0,0.3,22000,60
+abrothallus bertianus,"[""Sandy"",""Loamy"",""Clayey""]",Moss,"[""Spring"",""Autumn""]",48,"[""Organic compost"",""Leaf mold""]",4,"[""Shaded areas"",""Forests""]",15.0,12.5,750.0,0.4,30000,80
+abronia bigelovii,"[""Sandy Loam"",""Silty Loam"",""Clay Loam""]",Flowering Plant,"[""Spring"",""Summer""]",03-Feb,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Coastal Areas"",""Desert Areas""]",20.0,17.5,300.0,0.3,20000,70
+abronias bolackii,"[""Sandy Loam"",""Silt Loam"",""Clay Loam""]",Flowering Plant,"[""Spring"",""Summer""]",2,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""California"",""Nevada"",""Arizona""]",20.0,20.0,400.0,0.3,25000,60
+abies bracteata,"[""Well-drained soil"",""Loamy soil"",""Sandy soil""]",Coniferous tree,"[""Late spring"",""Summer"",""Early autumn""]",2,"[""Nitrogen-based fertilizer"",""Phosphorus-based fertilizer""]",6,"[""California"",""Oregon"",""Washington""]",17.5,15.0,1150.0,0.45,15000,70
+abies venusta,"[""Loamy"",""Sandy""]",Coniferous,"[""Spring"",""Summer""]",03-Feb,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Coastal regions"",""Mountainous areas""]",12.5,12.5,1300.0,0.35,30000,70
+abrothallus bryoriarum,"[""Sandy"",""Loamy"",""Clayey""]",Moss,"[""Spring"",""Summer"",""Autumn""]",24,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Temperate forests"",""Boreal forests"",""Tropical rainforests""]",15.0,10.0,125.0,0.45,2400,70
+abrothallus cetrariae,"[""Sandy"",""Loamy"",""Clayey""]",Moss,"[""Spring"",""Summer""]",24,"[""Nitrogen-based"",""Phosphorus-based""]",4,"[""Temperate forests"",""Mountain regions""]",15.0,10.0,150.0,0.4,3000,80
+abrothallus cladoniae,"[""Sandy"",""Loamy"",""Clayey""]",Moss,"[""Spring"",""Summer""]",2,"[""Organic matter"",""Slow-release fertilizers""]",4,"[""Forest"",""Mountainous regions""]",10.0,8.5,950.0,0.45,18000,80
+abies concolor,"[""Well-drained soil""]",Evergreen tree,"[""Spring"",""Summer""]",7 days interval,"[""Nitrogen-based fertilizer""]",4 weeks interval,"[""North America"",""Europe"",""Asia""]",-5.0,10.0,750.0,0.3,36000,70
+abronia fragrans,"[""Sandy"",""Loamy""]",Flowering plant,"[""Spring"",""Summer""]",2-3 hours interval,"[""Organic compost"",""Slow-release fertilizer""]",4 weeks interval,"[""Coastal regions"",""Mediterranean climates""]",20.0,20.0,400.0,0.3,20000,60
+abronias pumila,"[""Sandy loam"",""Loamy sand""]",Flowering plant,"[""Late spring"",""Summer""]",2-3 hours interval,"[""Nitrogen-based"",""Phosphorus-based""]",4 weeks interval,"[""Coastal regions"",""Mediterranean climates""]",20.0,20.0,350.0,0.3,24000,60
+abronia ramosa,"[""Sandy Loam"",""Loamy Sand"",""Sandy Clay Loam""]",Flowering Plant,"[""Spring"",""Summer""]",03-Feb,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""California"",""Arizona"",""New Mexico""]",20.0,21.5,400.0,0.3,20000,70
+abroniasalsa,"[""Sandy"",""Loamy"",""Clayey""]",Perennial,"[""Late spring"",""Summer""]",Every 2-3 days,"[""Slow-release granular fertilizer"",""Liquid fertilizer""]",Every 4-6 weeks,"[""Coastal regions"",""Mediterranean climates""]",20.0,17.5,400.0,0.25,5000,60
+abelia,"[""Loamy"",""Sandy"",""Clayey""]",Shrub,"[""Spring"",""Summer""]",2,"[""NPK"",""Compost""]",4,"[""United States"",""United Kingdom"",""Australia""]",25.0,17.5,750.0,0.3,40000,70
+abelmoschus esculentus,"[""Sandy loam"",""Clay loam"",""Silt loam""]",Hibiscus,"[""Summer"",""Rainy season""]",2,"[""Nitrogen-based fertilizers"",""Potassium-based fertilizers""]",4,"[""Tropical regions"",""Subtropical regions""]",30.0,25.0,750.0,0.3,4000,60
+abutilon eremitopetalum,"[""Well-drained soil"",""Loamy soil""]",Flowering plant,"[""Summer"",""Rainy season""]",Every 2-3 days,"[""Organic compost"",""Slow-release fertilizer""]",Every 4-6 weeks,"[""Tropical regions"",""Subtropical regions""]",21.5,22.5,750.0,0.4,20000,80
+hibiscus esculentus,"[""Sandy loam"",""Clay loam""]",Vegetable,"[""Spring"",""Summer""]",03-Feb,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Tropical regions"",""Subtropical regions""]",25.0,30.0,650.0,0.3,30000,70
+abies firma,"[""Loam"",""Sandy loam"",""Clay loam""]",Tree,"[""Spring"",""Summer""]",24 hours interval,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4 weeks interval,"[""Japan"",""China"",""Korea""]",10.0,11.5,1500.0,0.35,1800,80
+fraser fir,"[""Well-drained soil"",""Loamy soil""]",Evergreen Tree,"[""Spring"",""Summer""]",2-3 days interval,"[""Nitrogen-based fertilizer"",""Organic compost""]",4-6 weeks interval,"[""Eastern United States"",""Appalachian Mountains""]",-6.0,7.0,1500.0,0.25,2000,80
+pinus fraseri,"[""Sandy loam"",""Loamy sand"",""Silt loam""]",Evergreen Tree,"[""Late spring"",""Summer""]",48,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Southern Appalachian Mountains"",""Blue Ridge Mountains""]",20.0,15.0,1500.0,0.45,32000,70
+abutilon fruticosum,"[""Loam"",""Sandy"",""Clay""]",Shrub,"[""Spring"",""Summer"",""Autumn""]",3,"[""Organic fertilizer"",""Slow-release fertilizer""]",4,"[""Tropical regions"",""Mediterranean regions""]",25.0,20.0,750.0,0.3,20000,60
+abutilon texense,"[""Loamy"",""Sandy""]",Shrub,"[""Late Spring"",""Summer"",""Early Fall""]",03-Feb,"[""Organic fertilizer"",""Slow-release fertilizer""]",06-Apr,"[""Texas"",""Oklahoma"",""New Mexico""]",22.5,20.0,750.0,0.3,14000,60
+abutilon glabriflorum,"[""Loam"",""Sandy loam"",""Clay loam""]",Shrub,"[""Spring"",""Summer""]",03-Feb,"[""Organic compost"",""Slow-release fertilizer""]",4,"[""Mediterranean"",""Subtropical"",""Tropical""]",21.5,20.0,750.0,0.3,24000,60
+abies grandis,"[""Loamy"",""Sandy""]",Tree,"[""Spring"",""Summer""]",24,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4,"[""Pacific Northwest"",""Rocky Mountains""]",10.0,10.0,1500.0,0.3,5000,60
+abutilon grandifolium,"[""Sandy loam"",""Clay loam""]",Shrub,"[""Spring"",""Summer""]",03-Feb,"[""NPK 10-10-10"",""Organic compost""]",4,"[""Tropical regions"",""Subtropical regions""]",22.5,22.5,750.0,0.45,25000,70
+abelia × grandiflora,"[""Loam"",""Clay"",""Silt""]",Shrub,"[""Spring"",""Summer""]",03-Feb,"[""Nitrogen-based fertilizer"",""Phosphorus-based fertilizer"",""Potassium-based fertilizer""]",06-Apr,"[""Mediterranean region"",""Southern United States"",""Australia""]",20.0,20.0,800.0,0.35,16000,70
+abies guatemalensis,"[""Loam"",""Clay""]",Evergreen Tree,"[""Start of Summer"",""Fall""]",48 hours interval,"[""Nitrogen"",""Phosphorus"",""Potassium""]",4 weeks interval,"[""Central America"",""Mexico"",""Guatemala""]",15.0,20.0,1500.0,0.45,8000,80

@@ -1,11 +1,8 @@
-plant_name,type,species,plant_height,row_spacing,germination_rate,days_to_germination,days_to_maturity,seed_count_per_lb,recommended_planting_depth,hardiness_zone,seed_weight_per_acre,Seed Name,Temperature (2 m),Precipitation,Soil Temperature (0 to 6 cm),Soil Moisture (0-3 cm),Sunshine Duration,Humidity,Soil Type,Soil pH,Spacing,Seed depth,Hardiness zone,Watering (per week)
-Mighty Mustard® Pacific Gold Cover Crop Seed,Cover crop,Brassica juncea,24.0,6.0,85.0,3.0,90.0,60000.0,0.5,4.0,5.0,,,,,,,,,,,,,
-Mighty Mustard® Pacific Gold Cover Crop Seed,Cover crop,Brassica juncea,24.0,6.0,85.0,3.0,90.0,60000.0,0.5,4.0,5.0,,,,,,,,,,,,,
-,,,,,,,,,,,,VNS Yellow Pea Organic Field Pea Seed,18.0,12.0,16.0,20.0,8.0,60.0,Loamy,6.0,6.0,1.0,3.0,1.0
-Mighty Mustard® Pacific Gold Cover Crop Seed,Cover crop,Brassica juncea,24.0,6.0,85.0,3.0,90.0,60000.0,0.5,4.0,5.0,,,,,,,,,,,,,
-,,,,,,,,,,,,VNS Yellow Pea Organic Field Pea Seed,18.0,12.0,16.0,20.0,8.0,60.0,Loamy,6.0,6.0,1.0,3.0,1.0
-,,,,,,,,,,,,Summer Alfalfa Cover Crop Seed,24.0,15.0,20.0,25.0,8.0,55.0,Well-drained,7.0,18.0,0.5,4.0,1.0
-Mighty Mustard® Pacific Gold Cover Crop Seed,Cover crop,Brassica juncea,24.0,6.0,85.0,3.0,90.0,60000.0,0.5,4.0,5.0,,,,,,,,,,,,,
-,,,,,,,,,,,,VNS Yellow Pea Organic Field Pea Seed,18.0,12.0,16.0,20.0,8.0,60.0,Loamy,6.0,6.0,1.0,3.0,1.0
-,,,,,,,,,,,,Summer Alfalfa Cover Crop Seed,24.0,15.0,20.0,25.0,8.0,55.0,Well-drained,7.0,18.0,0.5,4.0,1.0
-,,,,,,,,,,,,Ryegrass Cover Crop Seed,18.0,20.0,16.0,30.0,6.0,70.0,Loamy,6.5,6.0,0.25,6.0,2.0
+Seed Name,Temperature (2 m),Precipitation,Soil Temperature (0 to 6 cm),Soil Moisture (0-3 cm),Sunshine Duration,Humidity,Hardiness zone,Watering (per week)
+Mighty Mustard® Pacific GoldCover Crop Seed,16,450,15,25,8,60,5,1
+Mighty Mustard® Pacific GoldCover Crop Seed,16,450,15,25,8,60,5,1
+VNS Yellow PeaOrganic Field Pea Seed,18,500,10,20,7,65,3,1
+Mighty Mustard® Pacific GoldCover Crop Seed,16,450,15,25,8,60,5,1
+VNS Yellow PeaOrganic Field Pea Seed,18,500,10,20,7,65,3,1
+Summer AlfalfaCover Crop Seed,22,350,18,30,9,55,4,2
+
