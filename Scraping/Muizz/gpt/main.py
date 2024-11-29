@@ -16,10 +16,6 @@ from selenium.common.exceptions import StaleElementReferenceException, TimeoutEx
 csv_file_path = "sample.csv"  # Update to absolute path if needed
 df = pd.read_csv(csv_file_path)
 
-# Configure logging
-logging.basicConfig(level=logging.DEBUG, filename='script_debug.log', filemode='w',
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
 # Start Chrome with remote debugging
 chrome_path = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
 remote_debugging_port = '9222'
@@ -53,27 +49,8 @@ def random_delay(min_delay=3, max_delay=5):
 # Function to type a prompt in ChatGPT's dialog box
 def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=10):
     prompt_text = (
-        f"For the plant '{plant_name}', provide a data profile strictly in JSON format. "
-        "The response must include only the specified attributes, with accurate numeric values where applicable. "
-        "Do not include units, explanations, or any additional information.\n"
-        "{{\n"
         f"  'Seed Name': '{plant_name}',\n"
-        "  'Temperature (2 m)': ,\n"
-        "  'Precipitation': ,\n"
-        "  'Soil Temperature (0 to 6 cm)': ,\n"
-        "  'Soil Moisture (0-3 cm)': ,\n"
-        "  'Sunshine Duration': ,\n"
-        "  'Humidity': ,\n"
-        "  'Soil Type': ,\n"
-        "  'Soil pH': ,\n"
-        "  'Spacing': ,\n"
-        "  'Seed depth': ,\n"
-        "  'Hardiness zone': ,\n"
-        "  'Watering (per week)':\n"
-        "}}\n"
-        "Ensure the response is concise and includes only the requested attributes in the specified format."
     )
-
 
     for attempt in range(retries):
         try:
