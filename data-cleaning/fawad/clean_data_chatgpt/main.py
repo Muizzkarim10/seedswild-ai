@@ -65,7 +65,7 @@ def random_delay(min_delay=3, max_delay=5):
 
 # Function to type a prompt in ChatGPT's dialog box
 def type_prompt_in_chatgpt(plant_name, retries=3, wait_time=10):
-    prompt_text = f"Respond in only json format to my question and it could be only respone :  yes or no nothing else. Do people commonly grow the plant '{plant_name}' in their gardens or homes? Yes or No?"
+    prompt_text = f"Respond in only json format to my question and it could be only respone :  yes or no nothing else. Do people commonly grow the plant '{plant_name}' in their gardens or homes? yes or no?"
 
     for attempt in range(retries):
         try:
