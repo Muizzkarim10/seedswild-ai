@@ -1,0 +1,6 @@
+Seed Name,Temperature (2 m),Precipitation,Soil Temperature (0 to 6 cm),Soil Moisture (0-3 cm),Sunshine Duration,Humidity,Hardiness zone,Watering (per week),Companing plants
+"Sunflower, Mexican Sunflower (Tithonia rotundifolia)",20,600,18,50,8,60,9,1,"['Zinnia', 'Cosmos', 'Marigold']"
+"Sunflower, Procut Horizon Pollenless",22,500,18,45,8,55,5,1,"['Zinnia', 'Lobelia', 'Marigold']"
+"Sunflower, Procut Peach",21,500,17,50,8,60,5,1,"['Zinnia', 'Cosmos', 'Marigold']"
+"Sunflower, Procut Red Lemon BiColor Pollenless",22,450,18,50,8,55,5,1,"['Zinnia', 'Cosmos', 'Marigold']"
+"Sunflower, Autumn Beauty (90 days)",21,450,18,50,8,60,4,1,"['Zinnia', 'Cosmos', 'Marigold']"
